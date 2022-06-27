@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048F8FA82869C7C70087B7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FA72869C7C70087B7D4 /* AppDelegate.swift */; };
+		048F8FAA2869C7C70087B7D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FA92869C7C70087B7D4 /* SceneDelegate.swift */; };
+		048F8FAC2869C7C70087B7D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FAB2869C7C70087B7D4 /* ViewController.swift */; };
+		048F8FAF2869C7C70087B7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048F8FAD2869C7C70087B7D4 /* Main.storyboard */; };
+		048F8FB22869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FB02869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld */; };
+		048F8FB42869C7C80087B7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048F8FB32869C7C80087B7D4 /* Assets.xcassets */; };
+		048F8FB72869C7C80087B7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048F8FB52869C7C80087B7D4 /* LaunchScreen.storyboard */; };
+		048F8FC22869C7C80087B7D4 /* basicnoteapp_EmirAlkalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FC12869C7C80087B7D4 /* basicnoteapp_EmirAlkalTests.swift */; };
+		048F8FCC2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FCB2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift */; };
+		048F8FCE2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FCD2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		048F8FBE2869C7C80087B7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 048F8F9C2869C7C70087B7D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 048F8FA32869C7C70087B7D4;
+			remoteInfo = "basicnoteapp-EmirAlkal";
+		};
+		048F8FC82869C7C80087B7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 048F8F9C2869C7C70087B7D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 048F8FA32869C7C70087B7D4;
+			remoteInfo = "basicnoteapp-EmirAlkal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		048F8FA42869C7C70087B7D4 /* basicnoteapp-EmirAlkal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "basicnoteapp-EmirAlkal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		048F8FA72869C7C70087B7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		048F8FA92869C7C70087B7D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		048F8FAB2869C7C70087B7D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		048F8FAE2869C7C70087B7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		048F8FB12869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = basicnoteapp_EmirAlkal.xcdatamodel; sourceTree = "<group>"; };
+		048F8FB32869C7C80087B7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		048F8FB62869C7C80087B7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		048F8FB82869C7C80087B7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048F8FBD2869C7C80087B7D4 /* basicnoteapp-EmirAlkalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "basicnoteapp-EmirAlkalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		048F8FC12869C7C80087B7D4 /* basicnoteapp_EmirAlkalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicnoteapp_EmirAlkalTests.swift; sourceTree = "<group>"; };
+		048F8FC72869C7C80087B7D4 /* basicnoteapp-EmirAlkalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "basicnoteapp-EmirAlkalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		048F8FCB2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicnoteapp_EmirAlkalUITests.swift; sourceTree = "<group>"; };
+		048F8FCD2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicnoteapp_EmirAlkalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		048F8FA12869C7C70087B7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048F8FBA2869C7C80087B7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048F8FC42869C7C80087B7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		048F8F9B2869C7C70087B7D4 = {
+			isa = PBXGroup;
+			children = (
+				048F8FA62869C7C70087B7D4 /* basicnoteapp-EmirAlkal */,
+				048F8FC02869C7C80087B7D4 /* basicnoteapp-EmirAlkalTests */,
+				048F8FCA2869C7C80087B7D4 /* basicnoteapp-EmirAlkalUITests */,
+				048F8FA52869C7C70087B7D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		048F8FA52869C7C70087B7D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				048F8FA42869C7C70087B7D4 /* basicnoteapp-EmirAlkal.app */,
+				048F8FBD2869C7C80087B7D4 /* basicnoteapp-EmirAlkalTests.xctest */,
+				048F8FC72869C7C80087B7D4 /* basicnoteapp-EmirAlkalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		048F8FA62869C7C70087B7D4 /* basicnoteapp-EmirAlkal */ = {
+			isa = PBXGroup;
+			children = (
+				048F8FA72869C7C70087B7D4 /* AppDelegate.swift */,
+				048F8FA92869C7C70087B7D4 /* SceneDelegate.swift */,
+				048F8FAB2869C7C70087B7D4 /* ViewController.swift */,
+				048F8FAD2869C7C70087B7D4 /* Main.storyboard */,
+				048F8FB32869C7C80087B7D4 /* Assets.xcassets */,
+				048F8FB52869C7C80087B7D4 /* LaunchScreen.storyboard */,
+				048F8FB82869C7C80087B7D4 /* Info.plist */,
+				048F8FB02869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld */,
+			);
+			path = "basicnoteapp-EmirAlkal";
+			sourceTree = "<group>";
+		};
+		048F8FC02869C7C80087B7D4 /* basicnoteapp-EmirAlkalTests */ = {
+			isa = PBXGroup;
+			children = (
+				048F8FC12869C7C80087B7D4 /* basicnoteapp_EmirAlkalTests.swift */,
+			);
+			path = "basicnoteapp-EmirAlkalTests";
+			sourceTree = "<group>";
+		};
+		048F8FCA2869C7C80087B7D4 /* basicnoteapp-EmirAlkalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				048F8FCB2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift */,
+				048F8FCD2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift */,
+			);
+			path = "basicnoteapp-EmirAlkalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		048F8FA32869C7C70087B7D4 /* basicnoteapp-EmirAlkal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048F8FD12869C7C80087B7D4 /* Build configuration list for PBXNativeTarget "basicnoteapp-EmirAlkal" */;
+			buildPhases = (
+				048F8FA02869C7C70087B7D4 /* Sources */,
+				048F8FA12869C7C70087B7D4 /* Frameworks */,
+				048F8FA22869C7C70087B7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "basicnoteapp-EmirAlkal";
+			productName = "basicnoteapp-EmirAlkal";
+			productReference = 048F8FA42869C7C70087B7D4 /* basicnoteapp-EmirAlkal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		048F8FBC2869C7C80087B7D4 /* basicnoteapp-EmirAlkalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048F8FD42869C7C80087B7D4 /* Build configuration list for PBXNativeTarget "basicnoteapp-EmirAlkalTests" */;
+			buildPhases = (
+				048F8FB92869C7C80087B7D4 /* Sources */,
+				048F8FBA2869C7C80087B7D4 /* Frameworks */,
+				048F8FBB2869C7C80087B7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				048F8FBF2869C7C80087B7D4 /* PBXTargetDependency */,
+			);
+			name = "basicnoteapp-EmirAlkalTests";
+			productName = "basicnoteapp-EmirAlkalTests";
+			productReference = 048F8FBD2869C7C80087B7D4 /* basicnoteapp-EmirAlkalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		048F8FC62869C7C80087B7D4 /* basicnoteapp-EmirAlkalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048F8FD72869C7C80087B7D4 /* Build configuration list for PBXNativeTarget "basicnoteapp-EmirAlkalUITests" */;
+			buildPhases = (
+				048F8FC32869C7C80087B7D4 /* Sources */,
+				048F8FC42869C7C80087B7D4 /* Frameworks */,
+				048F8FC52869C7C80087B7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				048F8FC92869C7C80087B7D4 /* PBXTargetDependency */,
+			);
+			name = "basicnoteapp-EmirAlkalUITests";
+			productName = "basicnoteapp-EmirAlkalUITests";
+			productReference = 048F8FC72869C7C80087B7D4 /* basicnoteapp-EmirAlkalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		048F8F9C2869C7C70087B7D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					048F8FA32869C7C70087B7D4 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					048F8FBC2869C7C80087B7D4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 048F8FA32869C7C70087B7D4;
+					};
+					048F8FC62869C7C80087B7D4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 048F8FA32869C7C70087B7D4;
+					};
+				};
+			};
+			buildConfigurationList = 048F8F9F2869C7C70087B7D4 /* Build configuration list for PBXProject "basicnoteapp-EmirAlkal" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 048F8F9B2869C7C70087B7D4;
+			productRefGroup = 048F8FA52869C7C70087B7D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				048F8FA32869C7C70087B7D4 /* basicnoteapp-EmirAlkal */,
+				048F8FBC2869C7C80087B7D4 /* basicnoteapp-EmirAlkalTests */,
+				048F8FC62869C7C80087B7D4 /* basicnoteapp-EmirAlkalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		048F8FA22869C7C70087B7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048F8FB72869C7C80087B7D4 /* LaunchScreen.storyboard in Resources */,
+				048F8FB42869C7C80087B7D4 /* Assets.xcassets in Resources */,
+				048F8FAF2869C7C70087B7D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048F8FBB2869C7C80087B7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048F8FC52869C7C80087B7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		048F8FA02869C7C70087B7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048F8FAC2869C7C70087B7D4 /* ViewController.swift in Sources */,
+				048F8FB22869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld in Sources */,
+				048F8FA82869C7C70087B7D4 /* AppDelegate.swift in Sources */,
+				048F8FAA2869C7C70087B7D4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048F8FB92869C7C80087B7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048F8FC22869C7C80087B7D4 /* basicnoteapp_EmirAlkalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048F8FC32869C7C80087B7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048F8FCE2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift in Sources */,
+				048F8FCC2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		048F8FBF2869C7C80087B7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 048F8FA32869C7C70087B7D4 /* basicnoteapp-EmirAlkal */;
+			targetProxy = 048F8FBE2869C7C80087B7D4 /* PBXContainerItemProxy */;
+		};
+		048F8FC92869C7C80087B7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 048F8FA32869C7C70087B7D4 /* basicnoteapp-EmirAlkal */;
+			targetProxy = 048F8FC82869C7C80087B7D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		048F8FAD2869C7C70087B7D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				048F8FAE2869C7C70087B7D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		048F8FB52869C7C80087B7D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				048F8FB62869C7C80087B7D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		048F8FCF2869C7C80087B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		048F8FD02869C7C80087B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		048F8FD22869C7C80087B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J24DR36CFW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "basicnoteapp-EmirAlkal/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alkalemir.basicnoteapp-EmirAlkal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		048F8FD32869C7C80087B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J24DR36CFW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "basicnoteapp-EmirAlkal/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alkalemir.basicnoteapp-EmirAlkal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		048F8FD52869C7C80087B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J24DR36CFW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alkalemir.basicnoteapp-EmirAlkalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/basicnoteapp-EmirAlkal.app/basicnoteapp-EmirAlkal";
+			};
+			name = Debug;
+		};
+		048F8FD62869C7C80087B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J24DR36CFW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alkalemir.basicnoteapp-EmirAlkalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/basicnoteapp-EmirAlkal.app/basicnoteapp-EmirAlkal";
+			};
+			name = Release;
+		};
+		048F8FD82869C7C80087B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J24DR36CFW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alkalemir.basicnoteapp-EmirAlkalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "basicnoteapp-EmirAlkal";
+			};
+			name = Debug;
+		};
+		048F8FD92869C7C80087B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J24DR36CFW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alkalemir.basicnoteapp-EmirAlkalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "basicnoteapp-EmirAlkal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		048F8F9F2869C7C70087B7D4 /* Build configuration list for PBXProject "basicnoteapp-EmirAlkal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048F8FCF2869C7C80087B7D4 /* Debug */,
+				048F8FD02869C7C80087B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048F8FD12869C7C80087B7D4 /* Build configuration list for PBXNativeTarget "basicnoteapp-EmirAlkal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048F8FD22869C7C80087B7D4 /* Debug */,
+				048F8FD32869C7C80087B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048F8FD42869C7C80087B7D4 /* Build configuration list for PBXNativeTarget "basicnoteapp-EmirAlkalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048F8FD52869C7C80087B7D4 /* Debug */,
+				048F8FD62869C7C80087B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048F8FD72869C7C80087B7D4 /* Build configuration list for PBXNativeTarget "basicnoteapp-EmirAlkalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048F8FD82869C7C80087B7D4 /* Debug */,
+				048F8FD92869C7C80087B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		048F8FB02869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				048F8FB12869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodel */,
+			);
+			currentVersion = 048F8FB12869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodel */;
+			path = basicnoteapp_EmirAlkal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 048F8F9C2869C7C70087B7D4 /* Project object */;
+}
