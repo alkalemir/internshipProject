@@ -17,6 +17,9 @@
 		048F8FC22869C7C80087B7D4 /* basicnoteapp_EmirAlkalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FC12869C7C80087B7D4 /* basicnoteapp_EmirAlkalTests.swift */; };
 		048F8FCC2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FCB2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift */; };
 		048F8FCE2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FCD2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift */; };
+		5E9082AB099910AD4B34D75A /* Pods_basicnoteapp_EmirAlkal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B37AAE9A7AD79BA646EE7A /* Pods_basicnoteapp_EmirAlkal.framework */; };
+		D410DE98F7D5BDF0852CB4D4 /* Pods_basicnoteapp_EmirAlkalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBA4DE9102EEA1C7542780A /* Pods_basicnoteapp_EmirAlkalTests.framework */; };
+		F26F4EB497D3C4C7A5D6D1D5 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216EDE9F32AC863D96724B66 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,15 @@
 		048F8FC72869C7C80087B7D4 /* basicnoteapp-EmirAlkalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "basicnoteapp-EmirAlkalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		048F8FCB2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicnoteapp_EmirAlkalUITests.swift; sourceTree = "<group>"; };
 		048F8FCD2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicnoteapp_EmirAlkalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0B2E24C5C940BFB65ABFFFD8 /* Pods-basicnoteapp-EmirAlkalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkalTests.release.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkalTests/Pods-basicnoteapp-EmirAlkalTests.release.xcconfig"; sourceTree = "<group>"; };
+		216EDE9F32AC863D96724B66 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD3F999E13D68F36BDB71B5 /* Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests.release.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests/Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		360AC32B6888AEF0F68ACF21 /* Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests.debug.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests/Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CBA4DE9102EEA1C7542780A /* Pods_basicnoteapp_EmirAlkalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basicnoteapp_EmirAlkalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		886AF1177DE7AF6F6DCB2B57 /* Pods-basicnoteapp-EmirAlkal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal.release.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal/Pods-basicnoteapp-EmirAlkal.release.xcconfig"; sourceTree = "<group>"; };
+		8E7C287F580852D6E5AE52D2 /* Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkalTests/Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96B37AAE9A7AD79BA646EE7A /* Pods_basicnoteapp_EmirAlkal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basicnoteapp_EmirAlkal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF903B2CC5A77C61B8D623D5 /* Pods-basicnoteapp-EmirAlkal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal/Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E9082AB099910AD4B34D75A /* Pods_basicnoteapp_EmirAlkal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D410DE98F7D5BDF0852CB4D4 /* Pods_basicnoteapp_EmirAlkalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26F4EB497D3C4C7A5D6D1D5 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				048F8FC02869C7C80087B7D4 /* basicnoteapp-EmirAlkalTests */,
 				048F8FCA2869C7C80087B7D4 /* basicnoteapp-EmirAlkalUITests */,
 				048F8FA52869C7C70087B7D4 /* Products */,
+				5CACF09786DD08C64EEA0898 /* Pods */,
+				DDF78DAC5B4D0C78077B17E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +147,29 @@
 			path = "basicnoteapp-EmirAlkalUITests";
 			sourceTree = "<group>";
 		};
+		5CACF09786DD08C64EEA0898 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF903B2CC5A77C61B8D623D5 /* Pods-basicnoteapp-EmirAlkal.debug.xcconfig */,
+				886AF1177DE7AF6F6DCB2B57 /* Pods-basicnoteapp-EmirAlkal.release.xcconfig */,
+				360AC32B6888AEF0F68ACF21 /* Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests.debug.xcconfig */,
+				2FD3F999E13D68F36BDB71B5 /* Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests.release.xcconfig */,
+				8E7C287F580852D6E5AE52D2 /* Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig */,
+				0B2E24C5C940BFB65ABFFFD8 /* Pods-basicnoteapp-EmirAlkalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DDF78DAC5B4D0C78077B17E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96B37AAE9A7AD79BA646EE7A /* Pods_basicnoteapp_EmirAlkal.framework */,
+				216EDE9F32AC863D96724B66 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework */,
+				3CBA4DE9102EEA1C7542780A /* Pods_basicnoteapp_EmirAlkalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +177,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 048F8FD12869C7C80087B7D4 /* Build configuration list for PBXNativeTarget "basicnoteapp-EmirAlkal" */;
 			buildPhases = (
+				494AE67D9CDAB4D21D68956A /* [CP] Check Pods Manifest.lock */,
+				048F8FDC286B1A3D0087B7D4 /* Run SwiftLint */,
 				048F8FA02869C7C70087B7D4 /* Sources */,
 				048F8FA12869C7C70087B7D4 /* Frameworks */,
 				048F8FA22869C7C70087B7D4 /* Resources */,
@@ -154,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 048F8FD42869C7C80087B7D4 /* Build configuration list for PBXNativeTarget "basicnoteapp-EmirAlkalTests" */;
 			buildPhases = (
+				5F7A179BC752CB275CD4AD99 /* [CP] Check Pods Manifest.lock */,
 				048F8FB92869C7C80087B7D4 /* Sources */,
 				048F8FBA2869C7C80087B7D4 /* Frameworks */,
 				048F8FBB2869C7C80087B7D4 /* Resources */,
@@ -172,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 048F8FD72869C7C80087B7D4 /* Build configuration list for PBXNativeTarget "basicnoteapp-EmirAlkalUITests" */;
 			buildPhases = (
+				3530550A3102CBE81BE2EF2C /* [CP] Check Pods Manifest.lock */,
 				048F8FC32869C7C80087B7D4 /* Sources */,
 				048F8FC42869C7C80087B7D4 /* Frameworks */,
 				048F8FC52869C7C80087B7D4 /* Resources */,
@@ -255,6 +299,93 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		048F8FDC286B1A3D0087B7D4 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		3530550A3102CBE81BE2EF2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		494AE67D9CDAB4D21D68956A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-basicnoteapp-EmirAlkal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F7A179BC752CB275CD4AD99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-basicnoteapp-EmirAlkalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		048F8FA02869C7C70087B7D4 /* Sources */ = {
@@ -436,6 +567,7 @@
 		};
 		048F8FD22869C7C80087B7D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF903B2CC5A77C61B8D623D5 /* Pods-basicnoteapp-EmirAlkal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +596,7 @@
 		};
 		048F8FD32869C7C80087B7D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 886AF1177DE7AF6F6DCB2B57 /* Pods-basicnoteapp-EmirAlkal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +625,7 @@
 		};
 		048F8FD52869C7C80087B7D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7C287F580852D6E5AE52D2 /* Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +646,7 @@
 		};
 		048F8FD62869C7C80087B7D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B2E24C5C940BFB65ABFFFD8 /* Pods-basicnoteapp-EmirAlkalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +667,7 @@
 		};
 		048F8FD82869C7C80087B7D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360AC32B6888AEF0F68ACF21 /* Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +686,7 @@
 		};
 		048F8FD92869C7C80087B7D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD3F999E13D68F36BDB71B5 /* Pods-basicnoteapp-EmirAlkal-basicnoteapp-EmirAlkalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
