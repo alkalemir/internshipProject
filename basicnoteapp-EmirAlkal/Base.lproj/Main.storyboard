@@ -64,6 +64,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3f1-p3-qcJ"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9h9-A2-igh">
                                 <rect key="frame" x="52" y="836" width="362" height="30"/>
@@ -118,6 +121,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="signUpButton" destination="mtX-PL-eJe" id="gik-b9-B0k"/>
                         <outlet property="stackView" destination="l1K-tA-vSL" id="rF7-2l-b9B"/>
                     </connections>
                 </viewController>

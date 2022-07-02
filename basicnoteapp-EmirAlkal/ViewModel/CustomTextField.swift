@@ -81,7 +81,6 @@ class CustomTextField: UIView, UITextFieldDelegate {
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        print("Sa")
         customLabel.isHidden = false
         mainTextField.placeholder = ""
         layer.borderColor = .init(red: 139 / 255, green: 140 / 255, blue: 255 / 255, alpha: 1)
@@ -97,7 +96,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
             isOk = true
         } else {
             errorLabel.isHidden = false
-            layer.borderColor = .init(red: 221/255, green: 44/244, blue: 0, alpha: 1)
+            layer.borderColor = .init(red: 221 / 255, green: 44 / 244, blue: 0, alpha: 1)
             layer.borderWidth = 1
             layer.cornerRadius = 5
             print("validasyon not ok")

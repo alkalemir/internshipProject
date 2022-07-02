@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak private var stackView: UIStackView!
+    @IBOutlet weak private var signUpButton: UIButton!
     
     var fullNameTextField = CustomTextField(title: "Full Name", errorMessage: "Invalid Full Name") { str in
         if str.isEmpty || str.count > 255 {
@@ -42,6 +43,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         passwordTextField.mainTextField.isSecureTextEntry = true
         configureStackView()
+        
+        Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(catchChange), userInfo: nil, repeats: true)
+    }
+    
+    @objc
+    func catchChange() {
+        if fullNameTextField.isOk && emailTextField.isOk && passwordTextField.isOk {
+            changeButtonStateToActive()
+        } else {
+            changeButtonStateToPassive()
+        }
+    }
+    
+    func changeButtonStateToActive() {
+        signUpButton.isEnabled = true
+        signUpButton.backgroundColor = .init(red: 139 / 255, green: 140 / 255, blue: 1, alpha: 1)
+        signUpButton.titleLabel?.textColor = .white
+    }
+    
+    func changeButtonStateToPassive() {
+        signUpButton.isEnabled = false
+        signUpButton.backgroundColor = .init(red: 220 / 255, green: 220 / 255, blue: 1, alpha: 1)
+        signUpButton.setTitleColor(.init(red: 139 / 140, green: 140 / 140, blue: 1, alpha: 1), for: .normal)
+
     }
     
     func configureStackView() {
@@ -50,5 +75,10 @@ class ViewController: UIViewController {
         stackView.addArrangedSubview(passwordTextField)
         stackView.spacing = 24
         stackView.distribution = .fillEqually
+    }
+    
+    @IBAction
+    private func signUpButtonPressed(_ sender: UIButton) {
+        print("pressed")
     }
 }
