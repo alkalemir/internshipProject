@@ -22,8 +22,8 @@
 		A32457DF2870725700A929E6 /* RegisterViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457DE2870725700A929E6 /* RegisterViewController+Ext.swift */; };
 		A32457E128707A5400A929E6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457E028707A5400A929E6 /* NetworkManager.swift */; };
 		A32457E328707AEF00A929E6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457E228707AEF00A929E6 /* RegisterModel.swift */; };
-		A33F215F2870868200CE9457 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F215E2870868200CE9457 /* KeychainWrapper.swift */; };
-		A33F21612870868C00CE9457 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F21602870868C00CE9457 /* KeychainItemAccessibility.swift */; };
+		A330F75F2870E33E00A52B8F /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */; };
+		A330F7602870E33E00A52B8F /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */; };
 		A33F21632870875700CE9457 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F21622870875700CE9457 /* RegisterResponseModel.swift */; };
 		D410DE98F7D5BDF0852CB4D4 /* Pods_basicnoteapp_EmirAlkalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBA4DE9102EEA1C7542780A /* Pods_basicnoteapp_EmirAlkalTests.framework */; };
 		F26F4EB497D3C4C7A5D6D1D5 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216EDE9F32AC863D96724B66 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework */; };
@@ -73,8 +73,8 @@
 		A32457DE2870725700A929E6 /* RegisterViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+Ext.swift"; sourceTree = "<group>"; };
 		A32457E028707A5400A929E6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A32457E228707AEF00A929E6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
-		A33F215E2870868200CE9457 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = ../../../Documents/KeychainWrapper.swift; sourceTree = "<group>"; };
-		A33F21602870868C00CE9457 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainItemAccessibility.swift; path = ../../../Documents/KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		A33F21622870875700CE9457 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
 		DF903B2CC5A77C61B8D623D5 /* Pods-basicnoteapp-EmirAlkal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal/Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,8 +142,8 @@
 				048F8FB52869C7C80087B7D4 /* LaunchScreen.storyboard */,
 				048F8FB82869C7C80087B7D4 /* Info.plist */,
 				048F8FB02869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld */,
-				A33F215E2870868200CE9457 /* KeychainWrapper.swift */,
-				A33F21602870868C00CE9457 /* KeychainItemAccessibility.swift */,
+				A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */,
+				A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */,
 			);
 			path = "basicnoteapp-EmirAlkal";
 			sourceTree = "<group>";
@@ -489,11 +489,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A33F215F2870868200CE9457 /* KeychainWrapper.swift in Sources */,
 				048F8FAC2869C7C70087B7D4 /* RegisterViewController.swift in Sources */,
 				048F8FB22869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld in Sources */,
-				A33F21612870868C00CE9457 /* KeychainItemAccessibility.swift in Sources */,
 				048F8FA82869C7C70087B7D4 /* AppDelegate.swift in Sources */,
+				A330F7602870E33E00A52B8F /* KeychainWrapper.swift in Sources */,
+				A330F75F2870E33E00A52B8F /* KeychainItemAccessibility.swift in Sources */,
 				A32457E128707A5400A929E6 /* NetworkManager.swift in Sources */,
 				A32457E328707AEF00A929E6 /* RegisterModel.swift in Sources */,
 				A33F21632870875700CE9457 /* RegisterResponseModel.swift in Sources */,
