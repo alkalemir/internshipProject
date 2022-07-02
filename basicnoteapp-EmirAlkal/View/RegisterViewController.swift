@@ -11,7 +11,7 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet weak private var stackView: UIStackView!
     @IBOutlet weak private var signUpButton: UIButton!
-    @IBOutlet weak private var signUpTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var signUpTopConstraint: NSLayoutConstraint!
     
     var fullNameTextField = CustomTextField(title: "Full Name", errorMessage: "Invalid Full Name") { str in
         if str.isEmpty || str.count > 255 {
