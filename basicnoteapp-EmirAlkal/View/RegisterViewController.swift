@@ -12,7 +12,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak private var stackView: UIStackView!
     @IBOutlet weak private var signUpButton: UIButton!
     @IBOutlet weak var signUpTopConstraint: NSLayoutConstraint!
-    
+        
     var fullNameTextField = CustomTextField(title: "Full Name", errorMessage: "Invalid Full Name") { str in
         if str.isEmpty || str.count > 255 {
             return false
@@ -84,6 +84,10 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction private func signUpButtonPressed(_ sender: UIButton) {
-        print("pressed")
+        let networkManager = NetworkManager(url: URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/auth/register")!)
+
+        networkManager.registerRequest(with: .init(full_name: fullNameTextField.mainTextField.text!,
+                                                   email: emailTextField.mainTextField.text!,
+                                                   password: passwordTextField.mainTextField.text!))
     }
 }

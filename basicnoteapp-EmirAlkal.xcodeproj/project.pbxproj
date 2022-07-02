@@ -20,6 +20,8 @@
 		5E9082AB099910AD4B34D75A /* Pods_basicnoteapp_EmirAlkal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B37AAE9A7AD79BA646EE7A /* Pods_basicnoteapp_EmirAlkal.framework */; };
 		A32457DC2870411700A929E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457DB2870411700A929E6 /* CustomTextField.swift */; };
 		A32457DF2870725700A929E6 /* RegisterViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457DE2870725700A929E6 /* RegisterViewController+Ext.swift */; };
+		A32457E128707A5400A929E6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457E028707A5400A929E6 /* NetworkManager.swift */; };
+		A32457E328707AEF00A929E6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457E228707AEF00A929E6 /* RegisterModel.swift */; };
 		D410DE98F7D5BDF0852CB4D4 /* Pods_basicnoteapp_EmirAlkalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBA4DE9102EEA1C7542780A /* Pods_basicnoteapp_EmirAlkalTests.framework */; };
 		F26F4EB497D3C4C7A5D6D1D5 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216EDE9F32AC863D96724B66 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		96B37AAE9A7AD79BA646EE7A /* Pods_basicnoteapp_EmirAlkal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basicnoteapp_EmirAlkal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32457DB2870411700A929E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A32457DE2870725700A929E6 /* RegisterViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+Ext.swift"; sourceTree = "<group>"; };
+		A32457E028707A5400A929E6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A32457E228707AEF00A929E6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		DF903B2CC5A77C61B8D623D5 /* Pods-basicnoteapp-EmirAlkal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal/Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +182,8 @@
 		A32457D72870408F00A929E6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A32457E028707A5400A929E6 /* NetworkManager.swift */,
+				A32457E228707AEF00A929E6 /* RegisterModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -477,6 +483,8 @@
 				048F8FAC2869C7C70087B7D4 /* RegisterViewController.swift in Sources */,
 				048F8FB22869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld in Sources */,
 				048F8FA82869C7C70087B7D4 /* AppDelegate.swift in Sources */,
+				A32457E128707A5400A929E6 /* NetworkManager.swift in Sources */,
+				A32457E328707AEF00A929E6 /* RegisterModel.swift in Sources */,
 				048F8FAA2869C7C70087B7D4 /* SceneDelegate.swift in Sources */,
 				A32457DF2870725700A929E6 /* RegisterViewController+Ext.swift in Sources */,
 				A32457DC2870411700A929E6 /* CustomTextField.swift in Sources */,
