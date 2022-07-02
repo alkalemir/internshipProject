@@ -9,21 +9,19 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    // MARK: - Properties
+    
     @IBOutlet weak private var stackView: UIStackView!
     @IBOutlet weak private var signUpButton: UIButton!
-    @IBOutlet weak var signUpTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak private var signUpTopConstraint: NSLayoutConstraint!
         
     var fullNameTextField = CustomTextField(title: "Full Name", errorMessage: "Invalid Full Name") { str in
-        if str.isEmpty || str.count > 255 {
-            return false
-        }
+        if str.isEmpty || str.count > 255 { return false }
         return true
     }
     
     var emailTextField = CustomTextField(title: "Email Address", errorMessage: "Invalid Mail") { str in
-        if str.isEmpty {
-            return false
-        }
+        if str.isEmpty { return false }
         
         let regex = try? NSRegularExpression(pattern: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
         let range = NSRange(location: 0, length: str.utf16.count)
@@ -34,9 +32,7 @@ class RegisterViewController: UIViewController {
     }
     
     var passwordTextField = CustomTextField(title: "Password", errorMessage: "Invalid password") { str in
-        if str.isEmpty || str.count < 6 || str.count > 255 {
-            return false
-        }
+        if str.isEmpty || str.count < 6 || str.count > 255 { return false }
         return true
     }
     
@@ -44,35 +40,36 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         passwordTextField.mainTextField.isSecureTextEntry = true
         configureStackView()
-        self.addDoneButtonOnKeyboard()
-        Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(catchChange), userInfo: nil, repeats: true)
-        
+        configureNotificationCenter()
+    }
+    
+    func configureNotificationCenter() {
         NotificationCenter.default.addObserver(
             self, selector: #selector(keyboardWillDisappear), name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.addObserver(
             self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(isOkChanged), name: Notification.Name("isOkProp"), object: nil)
     }
     
     @objc
-    func catchChange() {
+    func isOkChanged() {
         if fullNameTextField.isOk && emailTextField.isOk && passwordTextField.isOk {
             changeButtonStateToActive()
         } else {
             changeButtonStateToPassive()
         }
     }
-    
+
     func changeButtonStateToActive() {
         signUpButton.isEnabled = true
         signUpButton.backgroundColor = .init(red: 139 / 255, green: 140 / 255, blue: 1, alpha: 1)
         signUpButton.titleLabel?.textColor = .white
+        signUpButton.setTitleColor(.white, for: .normal)
     }
     
     func changeButtonStateToPassive() {
         signUpButton.isEnabled = false
         signUpButton.backgroundColor = .init(red: 220 / 255, green: 220 / 255, blue: 1, alpha: 1)
-        signUpButton.setTitleColor(.init(red: 139 / 140, green: 140 / 140, blue: 1, alpha: 1), for: .normal)
     }
     
     func configureStackView() {

@@ -85,6 +85,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
         mainTextField.placeholder = ""
         layer.borderColor = .init(red: 139 / 255, green: 140 / 255, blue: 255 / 255, alpha: 1)
         textFieldBottom.constant = -6
+        NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -94,6 +95,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
             layer.borderColor = .init(red: 0.886, green: 0.902, blue: 0.918, alpha: 1)
             print("validasyon ok")
             isOk = true
+            NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
         } else {
             errorLabel.isHidden = false
             layer.borderColor = .init(red: 221 / 255, green: 44 / 244, blue: 0, alpha: 1)
@@ -101,6 +103,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
             layer.cornerRadius = 5
             print("validasyon not ok")
             isOk = false
+            NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
         }
         
         if mainTextField.text!.isEmpty {
