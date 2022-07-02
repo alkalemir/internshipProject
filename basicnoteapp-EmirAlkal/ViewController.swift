@@ -26,11 +26,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureStackView()
+    }
+    
+    func configureStackView() {
         stackView.addArrangedSubview(fullNameTextField)
         stackView.addArrangedSubview(emailTextField)
         stackView.addArrangedSubview(passwordTextField)
-        stackView.spacing = 22
+        stackView.spacing = 24
         stackView.distribution = .fillEqually
-        
     }
 }
