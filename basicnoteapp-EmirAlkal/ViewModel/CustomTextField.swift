@@ -59,6 +59,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
         NSLayoutConstraint.activate([
             mainTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 18),
             mainTextField.topAnchor.constraint(equalTo: topAnchor, constant: 18),
+            mainTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -18),
             textFieldBottom
         ])
         
