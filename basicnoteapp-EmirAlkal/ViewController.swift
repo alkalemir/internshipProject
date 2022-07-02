@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        passwordTextField.mainTextField.isSecureTextEntry = true
         configureStackView()
     }
     
