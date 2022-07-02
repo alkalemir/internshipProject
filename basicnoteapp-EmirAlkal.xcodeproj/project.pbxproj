@@ -18,6 +18,7 @@
 		048F8FCC2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FCB2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift */; };
 		048F8FCE2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FCD2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift */; };
 		5E9082AB099910AD4B34D75A /* Pods_basicnoteapp_EmirAlkal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B37AAE9A7AD79BA646EE7A /* Pods_basicnoteapp_EmirAlkal.framework */; };
+		A32457DC2870411700A929E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457DB2870411700A929E6 /* CustomTextField.swift */; };
 		D410DE98F7D5BDF0852CB4D4 /* Pods_basicnoteapp_EmirAlkalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBA4DE9102EEA1C7542780A /* Pods_basicnoteapp_EmirAlkalTests.framework */; };
 		F26F4EB497D3C4C7A5D6D1D5 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216EDE9F32AC863D96724B66 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		886AF1177DE7AF6F6DCB2B57 /* Pods-basicnoteapp-EmirAlkal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal.release.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal/Pods-basicnoteapp-EmirAlkal.release.xcconfig"; sourceTree = "<group>"; };
 		8E7C287F580852D6E5AE52D2 /* Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkalTests/Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		96B37AAE9A7AD79BA646EE7A /* Pods_basicnoteapp_EmirAlkal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basicnoteapp_EmirAlkal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32457DB2870411700A929E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		DF903B2CC5A77C61B8D623D5 /* Pods-basicnoteapp-EmirAlkal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal/Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,8 +120,10 @@
 		048F8FA62869C7C70087B7D4 /* basicnoteapp-EmirAlkal */ = {
 			isa = PBXGroup;
 			children = (
-				048F8FA72869C7C70087B7D4 /* AppDelegate.swift */,
-				048F8FA92869C7C70087B7D4 /* SceneDelegate.swift */,
+				A32457D52870405500A929E6 /* App */,
+				A32457D72870408F00A929E6 /* Model */,
+				A32457DA287040DC00A929E6 /* View */,
+				A32457D9287040CF00A929E6 /* ViewModel */,
 				048F8FAB2869C7C70087B7D4 /* ViewController.swift */,
 				048F8FAD2869C7C70087B7D4 /* Main.storyboard */,
 				048F8FB32869C7C80087B7D4 /* Assets.xcassets */,
@@ -158,6 +162,37 @@
 				0B2E24C5C940BFB65ABFFFD8 /* Pods-basicnoteapp-EmirAlkalTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A32457D52870405500A929E6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				048F8FA72869C7C70087B7D4 /* AppDelegate.swift */,
+				048F8FA92869C7C70087B7D4 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A32457D72870408F00A929E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A32457D9287040CF00A929E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A32457DB2870411700A929E6 /* CustomTextField.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A32457DA287040DC00A929E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DDF78DAC5B4D0C78077B17E9 /* Frameworks */ = {
@@ -396,6 +431,7 @@
 				048F8FB22869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld in Sources */,
 				048F8FA82869C7C70087B7D4 /* AppDelegate.swift in Sources */,
 				048F8FAA2869C7C70087B7D4 /* SceneDelegate.swift in Sources */,
+				A32457DC2870411700A929E6 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

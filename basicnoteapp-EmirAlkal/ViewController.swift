@@ -9,11 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak private var stackView: UIStackView!
+    
+    var fullNameTextField = CustomTextField(title: "Full Name", errorMessage: "Invalid Full Name") { _ in
+        return false
+    }
+    
+    var emailTextField = CustomTextField(title: "Email Address", errorMessage: "Invalid Mail") { _ in
+        return false
+    }
+    
+    var passwordTextField = CustomTextField(title: "Password", errorMessage: "Invalid password") { _ in
+        return false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        stackView.addArrangedSubview(fullNameTextField)
+        stackView.addArrangedSubview(emailTextField)
+        stackView.addArrangedSubview(passwordTextField)
+        stackView.spacing = 22
+        stackView.distribution = .fillEqually
+        
     }
-
-
 }
-
