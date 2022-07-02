@@ -13,7 +13,14 @@ struct NetworkManager {
     
     func registerRequest(with registerInfo: Register) {
         AF.request(url, method: .post, parameters: registerInfo, encoder: JSONParameterEncoder.default).response { response in
-            debugPrint(response)
+            if let data = response.data {
+                do {
+                    let actualData = try JSONDecoder().decode(RegisterResponse.self, from: data)
+                    KeychainWrapper.standard.set(actualData.data.access_token, forKey: "token")
+                } catch {
+                    print("errorMsg")
+                }
+            }
         }
     }
 }
