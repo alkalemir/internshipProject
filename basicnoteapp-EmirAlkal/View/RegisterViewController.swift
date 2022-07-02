@@ -7,10 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     @IBOutlet weak private var stackView: UIStackView!
     @IBOutlet weak private var signUpButton: UIButton!
+    @IBOutlet weak private var signUpTopConstraint: NSLayoutConstraint!
     
     var fullNameTextField = CustomTextField(title: "Full Name", errorMessage: "Invalid Full Name") { str in
         if str.isEmpty || str.count > 255 {
@@ -43,8 +44,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         passwordTextField.mainTextField.isSecureTextEntry = true
         configureStackView()
-        
+        self.addDoneButtonOnKeyboard()
         Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(catchChange), userInfo: nil, repeats: true)
+        
+        NotificationCenter.default.addObserver(
+            self, selector: #selector(keyboardWillDisappear), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(
+            self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
     }
     
     @objc
@@ -66,7 +73,6 @@ class ViewController: UIViewController {
         signUpButton.isEnabled = false
         signUpButton.backgroundColor = .init(red: 220 / 255, green: 220 / 255, blue: 1, alpha: 1)
         signUpButton.setTitleColor(.init(red: 139 / 140, green: 140 / 140, blue: 1, alpha: 1), for: .normal)
-
     }
     
     func configureStackView() {
@@ -77,8 +83,7 @@ class ViewController: UIViewController {
         stackView.distribution = .fillEqually
     }
     
-    @IBAction
-    private func signUpButtonPressed(_ sender: UIButton) {
+    @IBAction private func signUpButtonPressed(_ sender: UIButton) {
         print("pressed")
     }
 }
