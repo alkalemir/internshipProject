@@ -75,11 +75,12 @@ class CustomTextField: UIView, UITextFieldDelegate {
         
         NSLayoutConstraint.activate([
             errorLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            errorLabel.topAnchor.constraint(equalTo: bottomAnchor, constant: 1)
+            errorLabel.topAnchor.constraint(equalTo: bottomAnchor, constant: 4)
         ])
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
+        print("Sa")
         customLabel.isHidden = false
         mainTextField.placeholder = ""
         layer.borderColor = .init(red: 139 / 255, green: 140 / 255, blue: 255 / 255, alpha: 1)
@@ -87,7 +88,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        
+
         if closure(textField.text!) {
             errorLabel.isHidden = true
             layer.borderColor = .init(red: 0.886, green: 0.902, blue: 0.918, alpha: 1)
@@ -95,8 +96,9 @@ class CustomTextField: UIView, UITextFieldDelegate {
             isOk = true
         } else {
             errorLabel.isHidden = false
-            layer.borderColor = UIColor.systemRed.cgColor
+            layer.borderColor = .init(red: 221/255, green: 44/244, blue: 0, alpha: 1)
             layer.borderWidth = 1
+            layer.cornerRadius = 5
             print("validasyon not ok")
             isOk = false
         }
@@ -106,12 +108,9 @@ class CustomTextField: UIView, UITextFieldDelegate {
             textFieldBottom.constant = -18
         }
         
-        layer.borderColor = .init(red: 226 / 255, green: 230 / 255, blue: 234 / 255, alpha: 1)
         mainTextField.attributedPlaceholder = NSAttributedString(
             string: title,
             attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 131 / 255, green: 141 / 255, blue: 146 / 255, alpha: 1)])
-        
-        layer.borderColor = .init(red: 226 / 255, green: 230 / 255, blue: 234 / 255, alpha: 1)
     }
     
     required init?(coder: NSCoder) {
