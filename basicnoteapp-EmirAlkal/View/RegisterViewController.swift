@@ -44,6 +44,7 @@ class RegisterViewController: UIViewController {
         configureStackView()
         configureNotificationCenter()
         
+        passwordTextField.mainTextField.addEyeToggle()
         fullNameTextField.mainTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
         emailTextField.mainTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
         passwordTextField.mainTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
