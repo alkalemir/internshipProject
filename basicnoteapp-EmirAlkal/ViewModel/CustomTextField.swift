@@ -40,26 +40,26 @@ class CustomTextField: UIView, UITextFieldDelegate {
         mainTextField.placeholder = title
         mainTextField.attributedPlaceholder = NSAttributedString(
             string: title, attributes:
-            [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholderText")!])
+            [NSAttributedString.Key.foregroundColor: UIColor(named: "grey")!])
         mainTextField.delegate = self
     }
     
     func configureCustomLabel() {
         customLabel.text = title
         customLabel.font = customLabel.font.withSize(12)
-        customLabel.textColor = UIColor(named: "placeholderText")
+        customLabel.textColor = UIColor(named: "grey")
         customLabel.isHidden = true
     }
     
     func configureErrorLabel() {
         errorLabel.text = errorMessage
-        errorLabel.textColor = UIColor(named: "errorFieldBorder")
+        errorLabel.textColor = UIColor(named: "red")
         errorLabel.font = errorLabel.font.withSize(11)
         errorLabel.isHidden = true
     }
     
     func configureLayout() {
-        layer.borderColor = UIColor(named: "textFieldBorder")?.cgColor
+        layer.borderColor = UIColor(named: "lightGrey")?.cgColor
         layer.borderWidth = 1
         layer.cornerRadius = 5
         
@@ -94,7 +94,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         customLabel.isHidden = false
         mainTextField.placeholder = ""
-        layer.borderColor = UIColor(named: "activeButtonBackground")?.cgColor
+        layer.borderColor = UIColor(named: "purple")?.cgColor
         textFieldBottom.constant = -6
         NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
     }
@@ -103,12 +103,12 @@ class CustomTextField: UIView, UITextFieldDelegate {
 
         if closure(textField.text!) {
             errorLabel.isHidden = true
-            layer.borderColor = UIColor(named: "textFieldBorder")?.cgColor
+            layer.borderColor = UIColor(named: "lightGrey")?.cgColor
             isOk = true
             NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
         } else {
             errorLabel.isHidden = false
-            layer.borderColor = UIColor(named: "errorFieldBorder")?.cgColor
+            layer.borderColor = UIColor(named: "red")?.cgColor
             layer.borderWidth = 1
             layer.cornerRadius = 5
             isOk = false
@@ -122,7 +122,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
         
         mainTextField.attributedPlaceholder = NSAttributedString(
             string: title,
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholderText")!])
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "grey")!])
     }
     
     required init?(coder: NSCoder) {

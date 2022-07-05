@@ -11,14 +11,14 @@ import Alamofire
 struct NetworkManager {
     let url: URL
     
-    func registerRequest(with registerInfo: Register) {
+    func registerRequest(with registerInfo: Register, completion: @escaping () -> Void) {
         AF.request(url, method: .post, parameters: registerInfo, encoder: JSONParameterEncoder.default).response { response in
             if let data = response.data {
                 do {
                     let actualData = try JSONDecoder().decode(RegisterResponse.self, from: data)
                     KeychainWrapper.standard.set(actualData.data.access_token, forKey: "token")
                 } catch {
-                    print("errorMsg")
+                    completion()
                 }
             }
         }

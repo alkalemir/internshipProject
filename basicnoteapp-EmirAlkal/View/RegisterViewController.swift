@@ -62,14 +62,14 @@ class RegisterViewController: UIViewController {
 
     func changeButtonStateToActive() {
         signUpButton.isEnabled = true
-        signUpButton.backgroundColor = UIColor(named: "activeButtonBackground")
+        signUpButton.backgroundColor = UIColor(named: "purple")
         signUpButton.titleLabel?.textColor = .white
         signUpButton.setTitleColor(.white, for: .normal)
     }
     
     func changeButtonStateToPassive() {
         signUpButton.isEnabled = false
-        signUpButton.backgroundColor = UIColor(named: "passiveButtonBackground")
+        signUpButton.backgroundColor = UIColor(named: "pink")
     }
     
     func configureStackView() {
@@ -85,6 +85,10 @@ class RegisterViewController: UIViewController {
 
         networkManager.registerRequest(with: .init(full_name: fullNameTextField.mainTextField.text!,
                                                    email: emailTextField.mainTextField.text!,
-                                                   password: passwordTextField.mainTextField.text!))
+                                                   password: passwordTextField.mainTextField.text!)) {
+            let alertController = UIAlertController(title: "Error", message: "Something went wrong with api!", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alertController, animated: true)
+        }
     }
 }
