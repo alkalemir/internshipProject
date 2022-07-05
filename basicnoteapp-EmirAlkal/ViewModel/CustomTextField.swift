@@ -27,28 +27,39 @@ class CustomTextField: UIView, UITextFieldDelegate {
         self.closure = closure
         isOk = false
         super.init(frame: .zero)
+        
         configureLayout()
+        configureMainTextField()
+        configureCustomLabel()
+        configureErrorLabel()
         
-        mainTextField.placeholder = title
-        mainTextField.attributedPlaceholder = NSAttributedString(
-            string: title, attributes:
-            [NSAttributedString.Key.foregroundColor: UIColor(red: 131 / 255, green: 141 / 255, blue: 146 / 255, alpha: 1)])
-        mainTextField.delegate = self
-        
-        customLabel.text = title
-        customLabel.font = customLabel.font.withSize(12)
-        customLabel.textColor = .init(red: 131 / 255, green: 141 / 255, blue: 146 / 255, alpha: 1)
-        customLabel.isHidden = true
-        
-        errorLabel.text = errorMessage
-        errorLabel.textColor = .init(red: 0.867, green: 0.173, blue: 0, alpha: 1)
-        errorLabel.font = errorLabel.font.withSize(11)
-        errorLabel.isHidden = true
         appendIconToString(to: errorLabel, imageName: "Group", offSet: -4)
     }
     
+    func configureMainTextField() {
+        mainTextField.placeholder = title
+        mainTextField.attributedPlaceholder = NSAttributedString(
+            string: title, attributes:
+            [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholderText")!])
+        mainTextField.delegate = self
+    }
+    
+    func configureCustomLabel() {
+        customLabel.text = title
+        customLabel.font = customLabel.font.withSize(12)
+        customLabel.textColor = UIColor(named: "placeholderText")
+        customLabel.isHidden = true
+    }
+    
+    func configureErrorLabel() {
+        errorLabel.text = errorMessage
+        errorLabel.textColor = UIColor(named: "errorFieldBorder")
+        errorLabel.font = errorLabel.font.withSize(11)
+        errorLabel.isHidden = true
+    }
+    
     func configureLayout() {
-        layer.borderColor = .init(red: 226 / 255, green: 230 / 255, blue: 234 / 255, alpha: 1)
+        layer.borderColor = UIColor(named: "textFieldBorder")?.cgColor
         layer.borderWidth = 1
         layer.cornerRadius = 5
         
@@ -83,7 +94,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         customLabel.isHidden = false
         mainTextField.placeholder = ""
-        layer.borderColor = .init(red: 139 / 255, green: 140 / 255, blue: 255 / 255, alpha: 1)
+        layer.borderColor = UIColor(named: "activeButtonBackground")?.cgColor
         textFieldBottom.constant = -6
         NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
     }
@@ -92,16 +103,14 @@ class CustomTextField: UIView, UITextFieldDelegate {
 
         if closure(textField.text!) {
             errorLabel.isHidden = true
-            layer.borderColor = .init(red: 0.886, green: 0.902, blue: 0.918, alpha: 1)
-            print("validasyon ok")
+            layer.borderColor = UIColor(named: "textFieldBorder")?.cgColor
             isOk = true
             NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
         } else {
             errorLabel.isHidden = false
-            layer.borderColor = .init(red: 221 / 255, green: 44 / 244, blue: 0, alpha: 1)
+            layer.borderColor = UIColor(named: "errorFieldBorder")?.cgColor
             layer.borderWidth = 1
             layer.cornerRadius = 5
-            print("validasyon not ok")
             isOk = false
             NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
         }
@@ -113,7 +122,7 @@ class CustomTextField: UIView, UITextFieldDelegate {
         
         mainTextField.attributedPlaceholder = NSAttributedString(
             string: title,
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 131 / 255, green: 141 / 255, blue: 146 / 255, alpha: 1)])
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "placeholderText")!])
     }
     
     required init?(coder: NSCoder) {

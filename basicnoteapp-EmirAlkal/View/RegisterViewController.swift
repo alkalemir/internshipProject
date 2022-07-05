@@ -13,7 +13,7 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak private var stackView: UIStackView!
     @IBOutlet weak private var signUpButton: UIButton!
-    @IBOutlet weak private var signUpTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var signUpTopConstraint: NSLayoutConstraint!
         
     var fullNameTextField = CustomTextField(title: "Full Name", errorMessage: "Invalid Full Name") { str in
         if str.isEmpty || str.count > 255 { return false }
@@ -62,14 +62,14 @@ class RegisterViewController: UIViewController {
 
     func changeButtonStateToActive() {
         signUpButton.isEnabled = true
-        signUpButton.backgroundColor = .init(red: 139 / 255, green: 140 / 255, blue: 1, alpha: 1)
+        signUpButton.backgroundColor = UIColor(named: "activeButtonBackground")
         signUpButton.titleLabel?.textColor = .white
         signUpButton.setTitleColor(.white, for: .normal)
     }
     
     func changeButtonStateToPassive() {
         signUpButton.isEnabled = false
-        signUpButton.backgroundColor = .init(red: 220 / 255, green: 220 / 255, blue: 1, alpha: 1)
+        signUpButton.backgroundColor = UIColor(named: "passiveButtonBackground")
     }
     
     func configureStackView() {

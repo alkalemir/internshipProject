@@ -5,7 +5,6 @@
 //  Created by Emir Alkal on 2.07.2022.
 //
 
-// swiftlint: disable all
 import Foundation
 
 struct RegisterResponse: Codable {
