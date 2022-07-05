@@ -36,11 +36,29 @@ class RegisterViewController: UIViewController {
         return true
     }
     
+    // MARK: - Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordTextField.mainTextField.isSecureTextEntry = true
         configureStackView()
         configureNotificationCenter()
+        
+        fullNameTextField.mainTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+        emailTextField.mainTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+        passwordTextField.mainTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+    }
+    
+    @objc
+    func textFieldDidChange(_ textField: UITextField) {
+        
+        if fullNameTextField.closure(fullNameTextField.mainTextField.text ?? "") &&
+            emailTextField.closure(emailTextField.mainTextField.text ?? "") &&
+            passwordTextField.closure(passwordTextField.mainTextField.text ?? "") {
+            changeButtonStateToActive()
+        } else {
+            changeButtonStateToPassive()
+        }
     }
     
     func configureNotificationCenter() {
@@ -48,23 +66,12 @@ class RegisterViewController: UIViewController {
             self, selector: #selector(keyboardWillDisappear), name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.addObserver(
             self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(isOkChanged), name: Notification.Name("isOkProp"), object: nil)
-    }
-    
-    @objc
-    func isOkChanged() {
-        if fullNameTextField.isOk && emailTextField.isOk && passwordTextField.isOk {
-            changeButtonStateToActive()
-        } else {
-            changeButtonStateToPassive()
-        }
     }
 
     func changeButtonStateToActive() {
+        signUpButton.tintColor = .white
         signUpButton.isEnabled = true
         signUpButton.backgroundColor = UIColor(named: "purple")
-        signUpButton.titleLabel?.textColor = .white
-        signUpButton.setTitleColor(.white, for: .normal)
     }
     
     func changeButtonStateToPassive() {
@@ -82,11 +89,11 @@ class RegisterViewController: UIViewController {
     
     @IBAction private func signUpButtonPressed(_ sender: UIButton) {
         let networkManager = NetworkManager(url: URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/auth/register")!)
-
-        networkManager.registerRequest(with: .init(full_name: fullNameTextField.mainTextField.text!,
+        
+        networkManager.registerRequest(with: .init(fullName: fullNameTextField.mainTextField.text!,
                                                    email: emailTextField.mainTextField.text!,
-                                                   password: passwordTextField.mainTextField.text!)) {
-            let alertController = UIAlertController(title: "Error", message: "Something went wrong with api!", preferredStyle: .alert)
+                                                   password: passwordTextField.mainTextField.text!)) { str in
+            let alertController = UIAlertController(title: "Error", message: str, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
             self.present(alertController, animated: true)
         }

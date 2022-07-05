@@ -28,6 +28,7 @@
 import Foundation
 
 // swiftlint: disable all
+
 protocol KeychainAttrRepresentable {
     var keychainAttrValue: CFString { get }
 }

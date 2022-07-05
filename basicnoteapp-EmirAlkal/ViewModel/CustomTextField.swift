@@ -19,13 +19,10 @@ class CustomTextField: UIView, UITextFieldDelegate {
     let errorMessage: String
     let closure: (String) -> Bool
     
-    var isOk: Bool
-    
     init(title: String, errorMessage: String, closure: @escaping ((String) -> Bool)) {
         self.title = title
         self.errorMessage = errorMessage
         self.closure = closure
-        isOk = false
         super.init(frame: .zero)
         
         configureLayout()
@@ -96,7 +93,6 @@ class CustomTextField: UIView, UITextFieldDelegate {
         mainTextField.placeholder = ""
         layer.borderColor = UIColor(named: "purple")?.cgColor
         textFieldBottom.constant = -6
-        NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -104,15 +100,11 @@ class CustomTextField: UIView, UITextFieldDelegate {
         if closure(textField.text!) {
             errorLabel.isHidden = true
             layer.borderColor = UIColor(named: "lightGrey")?.cgColor
-            isOk = true
-            NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
         } else {
             errorLabel.isHidden = false
             layer.borderColor = UIColor(named: "red")?.cgColor
             layer.borderWidth = 1
             layer.cornerRadius = 5
-            isOk = false
-            NotificationCenter.default.post(name: Notification.Name("isOkProp"), object: nil)
         }
         
         if mainTextField.text!.isEmpty {
