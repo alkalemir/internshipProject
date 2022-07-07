@@ -139,13 +139,9 @@
 				A32457D72870408F00A929E6 /* Model */,
 				A32457DA287040DC00A929E6 /* View */,
 				A32457D9287040CF00A929E6 /* ViewModel */,
-				048F8FAD2869C7C70087B7D4 /* Main.storyboard */,
 				048F8FB32869C7C80087B7D4 /* Assets.xcassets */,
-				048F8FB52869C7C80087B7D4 /* LaunchScreen.storyboard */,
 				048F8FB82869C7C80087B7D4 /* Info.plist */,
 				048F8FB02869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld */,
-				A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */,
-				A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */,
 			);
 			path = "basicnoteapp-EmirAlkal";
 			sourceTree = "<group>";
@@ -183,6 +179,8 @@
 		A32457D52870405500A929E6 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */,
+				A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */,
 				048F8FA72869C7C70087B7D4 /* AppDelegate.swift */,
 				048F8FA92869C7C70087B7D4 /* SceneDelegate.swift */,
 			);
@@ -210,6 +208,8 @@
 		A32457DA287040DC00A929E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				048F8FB52869C7C80087B7D4 /* LaunchScreen.storyboard */,
+				048F8FAD2869C7C70087B7D4 /* Main.storyboard */,
 				048F8FAB2869C7C70087B7D4 /* RegisterViewController.swift */,
 			);
 			path = View;

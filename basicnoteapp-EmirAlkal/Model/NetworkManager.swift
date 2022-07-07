@@ -8,8 +8,6 @@
 import Foundation
 import Alamofire
 
-// swiftlint: disable all
-
 struct NetworkManager {
     let url: URL
     
@@ -18,15 +16,23 @@ struct NetworkManager {
             
             if let statusCode = response.response?.statusCode {
                 if statusCode == 400 {
-                    let actualData = try! JSONDecoder().decode(ErrorMessage.self, from: response.data!)
-                    completion(actualData.message)
-                    return
+                    do {
+                        let actualData = try JSONDecoder().decode(ErrorMessage.self, from: response.data!)
+                        completion(actualData.message)
+                        return
+                    } catch {
+                        print(error.localizedDescription)
+                    }
                 }
             }
             
             if let data = response.data {
-                let actualData = try! JSONDecoder().decode(RegisterResponse.self, from: data)
-                KeychainWrapper.standard.set(actualData.data.access_token, forKey: "token")
+                do {
+                    let actualData = try JSONDecoder().decode(RegisterResponse.self, from: data)
+                    KeychainWrapper.standard.set(actualData.data.access_token, forKey: "token")
+                } catch {
+                    print(error.localizedDescription)
+                }
             }
         }
     }
