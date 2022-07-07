@@ -138,7 +138,7 @@
 				A32457D52870405500A929E6 /* App */,
 				A32457D72870408F00A929E6 /* Model */,
 				A32457DA287040DC00A929E6 /* View */,
-				A32457D9287040CF00A929E6 /* ViewModel */,
+				A3D0553628772DCD00E4BF7E /* Controller */,
 				048F8FB32869C7C80087B7D4 /* Assets.xcassets */,
 				048F8FB82869C7C80087B7D4 /* Info.plist */,
 				048F8FB02869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld */,
@@ -197,20 +197,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A32457D9287040CF00A929E6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A32457DB2870411700A929E6 /* CustomTextField.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		A32457DA287040DC00A929E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				048F8FB52869C7C80087B7D4 /* LaunchScreen.storyboard */,
 				048F8FAD2869C7C70087B7D4 /* Main.storyboard */,
-				048F8FAB2869C7C70087B7D4 /* RegisterViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +213,15 @@
 				A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A3D0553628772DCD00E4BF7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A32457DB2870411700A929E6 /* CustomTextField.swift */,
+				048F8FAB2869C7C70087B7D4 /* RegisterViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		DDF78DAC5B4D0C78077B17E9 /* Frameworks */ = {
