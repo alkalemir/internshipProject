@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		048F8FA82869C7C70087B7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FA72869C7C70087B7D4 /* AppDelegate.swift */; };
 		048F8FAA2869C7C70087B7D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FA92869C7C70087B7D4 /* SceneDelegate.swift */; };
-		048F8FAC2869C7C70087B7D4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FAB2869C7C70087B7D4 /* RegisterViewController.swift */; };
+		048F8FAC2869C7C70087B7D4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FAB2869C7C70087B7D4 /* RegisterVC.swift */; };
 		048F8FAF2869C7C70087B7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048F8FAD2869C7C70087B7D4 /* Main.storyboard */; };
 		048F8FB22869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FB02869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld */; };
 		048F8FB42869C7C80087B7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048F8FB32869C7C80087B7D4 /* Assets.xcassets */; };
@@ -18,14 +18,17 @@
 		048F8FCC2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FCB2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITests.swift */; };
 		048F8FCE2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F8FCD2869C7C80087B7D4 /* basicnoteapp_EmirAlkalUITestsLaunchTests.swift */; };
 		5E9082AB099910AD4B34D75A /* Pods_basicnoteapp_EmirAlkal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B37AAE9A7AD79BA646EE7A /* Pods_basicnoteapp_EmirAlkal.framework */; };
-		A32457DC2870411700A929E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457DB2870411700A929E6 /* CustomTextField.swift */; };
-		A32457DF2870725700A929E6 /* RegisterViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457DE2870725700A929E6 /* RegisterViewController+Ext.swift */; };
+		A3233E0528797E8100DBCE71 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3233E0428797E8100DBCE71 /* UILabel+Ext.swift */; };
+		A3233E0728797F0100DBCE71 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3233E0628797F0100DBCE71 /* Validations.swift */; };
+		A32457DC2870411700A929E6 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457DB2870411700A929E6 /* TextField.swift */; };
+		A32457DF2870725700A929E6 /* RegisterVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457DE2870725700A929E6 /* RegisterVC+Ext.swift */; };
 		A32457E128707A5400A929E6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457E028707A5400A929E6 /* NetworkManager.swift */; };
 		A32457E328707AEF00A929E6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457E228707AEF00A929E6 /* RegisterModel.swift */; };
 		A330F75F2870E33E00A52B8F /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */; };
 		A330F7602870E33E00A52B8F /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */; };
 		A33F21632870875700CE9457 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F21622870875700CE9457 /* RegisterResponseModel.swift */; };
 		A3C2CC9D2874CF5C002CA074 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */; };
+		A3D055392879781400E4BF7E /* TextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D055382879781400E4BF7E /* TextField+Ext.swift */; };
 		D410DE98F7D5BDF0852CB4D4 /* Pods_basicnoteapp_EmirAlkalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBA4DE9102EEA1C7542780A /* Pods_basicnoteapp_EmirAlkalTests.framework */; };
 		F26F4EB497D3C4C7A5D6D1D5 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216EDE9F32AC863D96724B66 /* Pods_basicnoteapp_EmirAlkal_basicnoteapp_EmirAlkalUITests.framework */; };
 /* End PBXBuildFile section */
@@ -51,7 +54,7 @@
 		048F8FA42869C7C70087B7D4 /* basicnoteapp-EmirAlkal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "basicnoteapp-EmirAlkal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		048F8FA72869C7C70087B7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048F8FA92869C7C70087B7D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		048F8FAB2869C7C70087B7D4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		048F8FAB2869C7C70087B7D4 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		048F8FAE2869C7C70087B7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		048F8FB12869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = basicnoteapp_EmirAlkal.xcdatamodel; sourceTree = "<group>"; };
 		048F8FB32869C7C80087B7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,14 +73,17 @@
 		886AF1177DE7AF6F6DCB2B57 /* Pods-basicnoteapp-EmirAlkal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal.release.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal/Pods-basicnoteapp-EmirAlkal.release.xcconfig"; sourceTree = "<group>"; };
 		8E7C287F580852D6E5AE52D2 /* Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkalTests/Pods-basicnoteapp-EmirAlkalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		96B37AAE9A7AD79BA646EE7A /* Pods_basicnoteapp_EmirAlkal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_basicnoteapp_EmirAlkal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A32457DB2870411700A929E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		A32457DE2870725700A929E6 /* RegisterViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+Ext.swift"; sourceTree = "<group>"; };
+		A3233E0428797E8100DBCE71 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		A3233E0628797F0100DBCE71 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		A32457DB2870411700A929E6 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		A32457DE2870725700A929E6 /* RegisterVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+Ext.swift"; sourceTree = "<group>"; };
 		A32457E028707A5400A929E6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A32457E228707AEF00A929E6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		A33F21622870875700CE9457 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
 		A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		A3D055382879781400E4BF7E /* TextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Ext.swift"; sourceTree = "<group>"; };
 		DF903B2CC5A77C61B8D623D5 /* Pods-basicnoteapp-EmirAlkal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal/Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,8 +140,9 @@
 		048F8FA62869C7C70087B7D4 /* basicnoteapp-EmirAlkal */ = {
 			isa = PBXGroup;
 			children = (
-				A32457DD2870721600A929E6 /* Extensions */,
 				A32457D52870405500A929E6 /* App */,
+				A3D055372879770C00E4BF7E /* Utils */,
+				A32457DD2870721600A929E6 /* Extensions */,
 				A32457D72870408F00A929E6 /* Model */,
 				A32457DA287040DC00A929E6 /* View */,
 				A3D0553628772DCD00E4BF7E /* Controller */,
@@ -179,8 +186,6 @@
 		A32457D52870405500A929E6 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */,
-				A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */,
 				048F8FA72869C7C70087B7D4 /* AppDelegate.swift */,
 				048F8FA92869C7C70087B7D4 /* SceneDelegate.swift */,
 			);
@@ -202,6 +207,7 @@
 			children = (
 				048F8FB52869C7C80087B7D4 /* LaunchScreen.storyboard */,
 				048F8FAD2869C7C70087B7D4 /* Main.storyboard */,
+				A32457DB2870411700A929E6 /* TextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,8 +215,10 @@
 		A32457DD2870721600A929E6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A32457DE2870725700A929E6 /* RegisterViewController+Ext.swift */,
+				A32457DE2870725700A929E6 /* RegisterVC+Ext.swift */,
 				A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */,
+				A3D055382879781400E4BF7E /* TextField+Ext.swift */,
+				A3233E0428797E8100DBCE71 /* UILabel+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -218,10 +226,19 @@
 		A3D0553628772DCD00E4BF7E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A32457DB2870411700A929E6 /* CustomTextField.swift */,
-				048F8FAB2869C7C70087B7D4 /* RegisterViewController.swift */,
+				048F8FAB2869C7C70087B7D4 /* RegisterVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3D055372879770C00E4BF7E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */,
+				A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */,
+				A3233E0628797F0100DBCE71 /* Validations.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DDF78DAC5B4D0C78077B17E9 /* Frameworks */ = {
@@ -492,9 +509,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048F8FAC2869C7C70087B7D4 /* RegisterViewController.swift in Sources */,
+				048F8FAC2869C7C70087B7D4 /* RegisterVC.swift in Sources */,
 				048F8FB22869C7C70087B7D4 /* basicnoteapp_EmirAlkal.xcdatamodeld in Sources */,
+				A3D055392879781400E4BF7E /* TextField+Ext.swift in Sources */,
 				048F8FA82869C7C70087B7D4 /* AppDelegate.swift in Sources */,
+				A3233E0728797F0100DBCE71 /* Validations.swift in Sources */,
+				A3233E0528797E8100DBCE71 /* UILabel+Ext.swift in Sources */,
 				A330F7602870E33E00A52B8F /* KeychainWrapper.swift in Sources */,
 				A330F75F2870E33E00A52B8F /* KeychainItemAccessibility.swift in Sources */,
 				A32457E128707A5400A929E6 /* NetworkManager.swift in Sources */,
@@ -502,8 +522,8 @@
 				A3C2CC9D2874CF5C002CA074 /* UITextField+Ext.swift in Sources */,
 				A33F21632870875700CE9457 /* RegisterResponseModel.swift in Sources */,
 				048F8FAA2869C7C70087B7D4 /* SceneDelegate.swift in Sources */,
-				A32457DF2870725700A929E6 /* RegisterViewController+Ext.swift in Sources */,
-				A32457DC2870411700A929E6 /* CustomTextField.swift in Sources */,
+				A32457DF2870725700A929E6 /* RegisterVC+Ext.swift in Sources */,
+				A32457DC2870411700A929E6 /* TextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
