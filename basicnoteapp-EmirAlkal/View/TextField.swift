@@ -48,7 +48,9 @@ class TextField: UIView, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
 
-        if closure(textField.text!) {
+        guard let textFieldText = textField.text else { return }
+        
+        if closure(textFieldText) {
             errorLabel.isHidden = true
             layer.borderColor = UIColor(named: "lightGrey")?.cgColor
         } else {

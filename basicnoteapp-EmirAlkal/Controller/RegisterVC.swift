@@ -45,7 +45,8 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction private func signUpButtonPressed(_ sender: UIButton) {
-        let networkManager = NetworkManager(url: URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/auth/register")!)
+        guard let url = URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/auth/register") else { return }
+        let networkManager = NetworkManager(url: url)
         
         guard let fullNameText = fullNameTextField.mainTextField.text,
               let emailText = emailTextField.mainTextField.text,
