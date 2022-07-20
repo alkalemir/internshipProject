@@ -14,6 +14,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var loginTopConstraint: NSLayoutConstraint!
+    // swiftlint: enable all
     
     var emailTextField = TextField(title: "Email Address", errorMessage: "Invalid Mail", closure: Validate.emailTextField)
     var passwordTextField = TextField(title: "Password", errorMessage: "Invalid password", closure: Validate.passwordTextField)
@@ -40,7 +41,7 @@ class LoginVC: UIViewController {
         loginButton.backgroundColor = UIColor(named: "pink")
     }
     
-    @IBAction func loginButtonPressed(_ sender: UIButton) {
+    @IBAction private func loginButtonPressed(_ sender: UIButton) {
         guard let url = URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/auth/login") else { return }
         let networkManager = NetworkManager(url: url)
         
