@@ -18,7 +18,6 @@ struct Register: Encodable {
     let fullName: String
     let email: String
     let password: String
-
 }
 
 struct ErrorMessage: Codable {

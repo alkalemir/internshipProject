@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RegisterResponse: Codable {
+struct TokenResponse: Codable {
     let data: Token
 }
 

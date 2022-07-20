@@ -28,7 +28,7 @@ struct NetworkManager {
             
             if let data = response.data {
                 do {
-                    let actualData = try JSONDecoder().decode(RegisterResponse.self, from: data)
+                    let actualData = try JSONDecoder().decode(TokenResponse.self, from: data)
                     KeychainWrapper.standard.set(actualData.data.access_token, forKey: "token")
                     onSuccess()
                 } catch {
@@ -49,10 +49,19 @@ struct NetworkManager {
                     } catch {
                         print(error.localizedDescription)
                     }
-                } else {
-                    onSuccess()
                 }
             }
+            
+            if let data = response.data {
+                do {
+                    let actualData = try JSONDecoder().decode(TokenResponse.self, from: data)
+                    KeychainWrapper.standard.set(actualData.data.access_token, forKey: "token")
+                    onSuccess()
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+            
         }
     }
 }
