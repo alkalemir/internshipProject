@@ -11,7 +11,7 @@ import Alamofire
 struct NetworkManager {
     let url: URL
     
-    func registerRequest(with registerInfo: Register, completion: @escaping (String) -> Void) {
+    func registerRequest(with registerInfo: Register, completion: @escaping (String) -> Void, onSuccess: @escaping () -> Void) {
         AF.request(url, method: .post, parameters: registerInfo, encoder: JSONParameterEncoder.default).response { response in
             
             if let statusCode = response.response?.statusCode {
@@ -30,6 +30,7 @@ struct NetworkManager {
                 do {
                     let actualData = try JSONDecoder().decode(RegisterResponse.self, from: data)
                     KeychainWrapper.standard.set(actualData.data.access_token, forKey: "token")
+                    onSuccess()
                 } catch {
                     print(error.localizedDescription)
                 }
