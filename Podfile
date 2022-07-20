@@ -7,6 +7,7 @@ target 'basicnoteapp-EmirAlkal' do
 
   # Pods for basicnoteapp-EmirAlkal
   pod 'SwiftLint'
+  pod 'Alamofire'
 
 
   target 'basicnoteapp-EmirAlkalTests' do
