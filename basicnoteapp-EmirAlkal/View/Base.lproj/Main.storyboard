@@ -122,6 +122,7 @@
                             <constraint firstItem="6Qk-6K-Fki" firstAttribute="top" secondItem="Fga-9w-b2G" secondAttribute="bottom" constant="16" id="ycX-4b-8gS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6jH-O6-Ljn"/>
                     <connections>
                         <outlet property="signUpButton" destination="mtX-PL-eJe" id="gik-b9-B0k"/>
                         <outlet property="signUpTopConstraint" destination="6qR-yh-aYT" id="vRJ-rK-f0I"/>
@@ -190,6 +191,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="loginButtonPressed:" destination="hbB-ku-Iih" eventType="touchUpInside" id="2cA-xu-qSD"/>
                                     <action selector="signUpButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sM-rU-Yiv"/>
                                 </connections>
                             </button>
@@ -209,6 +211,9 @@
                                         <state key="normal" title="Sign in now">
                                             <color key="titleColor" red="0.5450980392" green="0.54901960780000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="LSs-i2-C0I"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

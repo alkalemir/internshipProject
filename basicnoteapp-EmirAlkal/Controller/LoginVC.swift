@@ -26,7 +26,7 @@ class LoginVC: UIViewController {
         configureNotificationCenter()
         configureTextFields()
         configureGesture()
-    }
+    } 
     
     // MARK: - Functions
     func changeButtonStateToActive() {
@@ -38,5 +38,22 @@ class LoginVC: UIViewController {
     func changeButtonStateToPassive() {
         loginButton.isEnabled = false
         loginButton.backgroundColor = UIColor(named: "pink")
+    }
+    
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        guard let url = URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/auth/login") else { return }
+        let networkManager = NetworkManager(url: url)
+        
+        guard let emailText = emailTextField.mainTextField.text,
+              let passwordText = passwordTextField.mainTextField.text
+        else { return }
+        
+        networkManager.loginRequest(with: .init(email: emailText, password: passwordText)) { str in
+            let alertController = UIAlertController(title: "Error", message: str, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alertController, animated: true)
+        } onSuccess: {
+            
+        }
     }
 }
