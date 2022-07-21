@@ -26,6 +26,8 @@
 		A32457E328707AEF00A929E6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457E228707AEF00A929E6 /* RegisterModel.swift */; };
 		A330F75F2870E33E00A52B8F /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */; };
 		A330F7602870E33E00A52B8F /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */; };
+		A338976A288953130058CE15 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3389769288953130058CE15 /* ForgotPasswordVC.swift */; };
+		A338976C2889555B0058CE15 /* ForgotPasswordVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338976B2889555B0058CE15 /* ForgotPasswordVC+Ext.swift */; };
 		A33F21632870875700CE9457 /* TokenResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F21622870875700CE9457 /* TokenResponseModel.swift */; };
 		A35947572887FB4E00B0C4CD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35947562887FB4E00B0C4CD /* LoginVC.swift */; };
 		A35947592887FDAC00B0C4CD /* LoginVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35947582887FDAC00B0C4CD /* LoginVC+Ext.swift */; };
@@ -84,6 +86,8 @@
 		A32457E228707AEF00A929E6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		A3389769288953130058CE15 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		A338976B2889555B0058CE15 /* ForgotPasswordVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordVC+Ext.swift"; sourceTree = "<group>"; };
 		A33F21622870875700CE9457 /* TokenResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponseModel.swift; sourceTree = "<group>"; };
 		A35947562887FB4E00B0C4CD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A35947582887FDAC00B0C4CD /* LoginVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+Ext.swift"; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 				A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */,
 				A3D055382879781400E4BF7E /* TextField+Ext.swift */,
 				A3233E0428797E8100DBCE71 /* UILabel+Ext.swift */,
+				A338976B2889555B0058CE15 /* ForgotPasswordVC+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			children = (
 				048F8FAB2869C7C70087B7D4 /* RegisterVC.swift */,
 				A35947562887FB4E00B0C4CD /* LoginVC.swift */,
+				A3389769288953130058CE15 /* ForgotPasswordVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -524,7 +530,9 @@
 				048F8FA82869C7C70087B7D4 /* AppDelegate.swift in Sources */,
 				A3233E0728797F0100DBCE71 /* Validations.swift in Sources */,
 				A3233E0528797E8100DBCE71 /* UILabel+Ext.swift in Sources */,
+				A338976C2889555B0058CE15 /* ForgotPasswordVC+Ext.swift in Sources */,
 				A330F7602870E33E00A52B8F /* KeychainWrapper.swift in Sources */,
+				A338976A288953130058CE15 /* ForgotPasswordVC.swift in Sources */,
 				A35947592887FDAC00B0C4CD /* LoginVC+Ext.swift in Sources */,
 				A330F75F2870E33E00A52B8F /* KeychainItemAccessibility.swift in Sources */,
 				A32457E128707A5400A929E6 /* NetworkManager.swift in Sources */,
