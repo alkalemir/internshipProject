@@ -59,6 +59,10 @@ class RegisterVC: UIViewController {
             let alertController = UIAlertController(title: "Error", message: str, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
             self.present(alertController, animated: true)
+        } onSuccess: {
+            let destVC = self.storyboard!.instantiateViewController(withIdentifier: "loginVC")
+            destVC.modalPresentationStyle = .fullScreen
+            self.present(destVC, animated: true)
         }
     }
 }

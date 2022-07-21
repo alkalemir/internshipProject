@@ -26,7 +26,10 @@
 		A32457E328707AEF00A929E6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32457E228707AEF00A929E6 /* RegisterModel.swift */; };
 		A330F75F2870E33E00A52B8F /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */; };
 		A330F7602870E33E00A52B8F /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */; };
-		A33F21632870875700CE9457 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F21622870875700CE9457 /* RegisterResponseModel.swift */; };
+		A33F21632870875700CE9457 /* TokenResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F21622870875700CE9457 /* TokenResponseModel.swift */; };
+		A35947572887FB4E00B0C4CD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35947562887FB4E00B0C4CD /* LoginVC.swift */; };
+		A35947592887FDAC00B0C4CD /* LoginVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35947582887FDAC00B0C4CD /* LoginVC+Ext.swift */; };
+		A359475B2888054A00B0C4CD /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359475A2888054900B0C4CD /* LoginModel.swift */; };
 		A3C2CC9D2874CF5C002CA074 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */; };
 		A3D055392879781400E4BF7E /* TextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D055382879781400E4BF7E /* TextField+Ext.swift */; };
 		D410DE98F7D5BDF0852CB4D4 /* Pods_basicnoteapp_EmirAlkalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBA4DE9102EEA1C7542780A /* Pods_basicnoteapp_EmirAlkalTests.framework */; };
@@ -81,7 +84,10 @@
 		A32457E228707AEF00A929E6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		A330F75D2870E33E00A52B8F /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		A330F75E2870E33E00A52B8F /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
-		A33F21622870875700CE9457 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
+		A33F21622870875700CE9457 /* TokenResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponseModel.swift; sourceTree = "<group>"; };
+		A35947562887FB4E00B0C4CD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		A35947582887FDAC00B0C4CD /* LoginVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+Ext.swift"; sourceTree = "<group>"; };
+		A359475A2888054900B0C4CD /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		A3D055382879781400E4BF7E /* TextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Ext.swift"; sourceTree = "<group>"; };
 		DF903B2CC5A77C61B8D623D5 /* Pods-basicnoteapp-EmirAlkal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; path = "Target Support Files/Pods-basicnoteapp-EmirAlkal/Pods-basicnoteapp-EmirAlkal.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,7 +203,8 @@
 			children = (
 				A32457E028707A5400A929E6 /* NetworkManager.swift */,
 				A32457E228707AEF00A929E6 /* RegisterModel.swift */,
-				A33F21622870875700CE9457 /* RegisterResponseModel.swift */,
+				A359475A2888054900B0C4CD /* LoginModel.swift */,
+				A33F21622870875700CE9457 /* TokenResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				A32457DE2870725700A929E6 /* RegisterVC+Ext.swift */,
+				A35947582887FDAC00B0C4CD /* LoginVC+Ext.swift */,
 				A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */,
 				A3D055382879781400E4BF7E /* TextField+Ext.swift */,
 				A3233E0428797E8100DBCE71 /* UILabel+Ext.swift */,
@@ -227,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				048F8FAB2869C7C70087B7D4 /* RegisterVC.swift */,
+				A35947562887FB4E00B0C4CD /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -516,11 +525,14 @@
 				A3233E0728797F0100DBCE71 /* Validations.swift in Sources */,
 				A3233E0528797E8100DBCE71 /* UILabel+Ext.swift in Sources */,
 				A330F7602870E33E00A52B8F /* KeychainWrapper.swift in Sources */,
+				A35947592887FDAC00B0C4CD /* LoginVC+Ext.swift in Sources */,
 				A330F75F2870E33E00A52B8F /* KeychainItemAccessibility.swift in Sources */,
 				A32457E128707A5400A929E6 /* NetworkManager.swift in Sources */,
 				A32457E328707AEF00A929E6 /* RegisterModel.swift in Sources */,
+				A35947572887FB4E00B0C4CD /* LoginVC.swift in Sources */,
 				A3C2CC9D2874CF5C002CA074 /* UITextField+Ext.swift in Sources */,
-				A33F21632870875700CE9457 /* RegisterResponseModel.swift in Sources */,
+				A359475B2888054A00B0C4CD /* LoginModel.swift in Sources */,
+				A33F21632870875700CE9457 /* TokenResponseModel.swift in Sources */,
 				048F8FAA2869C7C70087B7D4 /* SceneDelegate.swift in Sources */,
 				A32457DF2870725700A929E6 /* RegisterVC+Ext.swift in Sources */,
 				A32457DC2870411700A929E6 /* TextField.swift in Sources */,
