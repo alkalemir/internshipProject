@@ -290,13 +290,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K5H-lY-5vC">
-                                <rect key="frame" x="24" y="200" width="366" height="70"/>
+                                <rect key="frame" x="24" y="200" width="366" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="pnY-AN-NAb"/>
+                                    <constraint firstAttribute="height" constant="65" id="pnY-AN-NAb"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfE-rC-uOx">
-                                <rect key="frame" x="24" y="310" width="366" height="63"/>
+                                <rect key="frame" x="24" y="305" width="366" height="63"/>
                                 <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="63" id="6B5-TF-9id"/>
@@ -321,6 +321,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="hbB-ku-Iih" eventType="touchUpInside" id="zEQ-dK-Kr6"/>
+                                    <action selector="resetButtonPressed:" destination="zIm-9y-Xzj" eventType="touchUpInside" id="nV3-3P-l0r"/>
                                     <action selector="signUpButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5i7-EL-93V"/>
                                 </connections>
                             </button>

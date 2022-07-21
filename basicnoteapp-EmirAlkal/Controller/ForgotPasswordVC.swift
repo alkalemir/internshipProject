@@ -33,4 +33,20 @@ class ForgotPasswordVC: UIViewController {
         forgotButton.isEnabled = false
         forgotButton.backgroundColor = UIColor(named: "pink")
     }
+    
+    @IBAction private func resetButtonPressed(_ sender: UIButton) {
+        guard let textFieldText = emailTextField.mainTextField.text else {
+            return
+        }
+        NetworkManager(url: URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/auth/forgot-password")!)
+            .forgotPasswordRequest(email: Forgot(email: textFieldText)) { str in
+                let alertController = UIAlertController(title: "Error", message: str, preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                self.present(alertController, animated: true)
+            } onSuccess: { response in
+                let alertController = UIAlertController(title: "Success", message: response.message, preferredStyle: .actionSheet)
+                alertController.addAction(UIAlertAction(title: "OK!", style: .default))
+                self.present(alertController, animated: true)
+            }
+    }
 }

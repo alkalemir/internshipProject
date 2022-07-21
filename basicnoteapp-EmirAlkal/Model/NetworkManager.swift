@@ -61,7 +61,31 @@ struct NetworkManager {
                     print(error.localizedDescription)
                 }
             }
-            
+        }
+    }
+    
+    func forgotPasswordRequest(email: Forgot, completion: @escaping (String) -> Void, onSuccess: @escaping (ForgotResponse) -> Void) {
+
+        AF.request(url, method: .post, parameters: email, encoder: JSONParameterEncoder.default).response { response in
+            if let statusCode = response.response?.statusCode {
+                if statusCode == 400 {
+                    do {
+                        let actualData = try JSONDecoder().decode(ErrorMessage.self, from: response.data!)
+                        completion(actualData.message)
+                        return
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            if let data = response.data {
+                do {
+                    let actualData = try JSONDecoder().decode(ForgotResponse.self, from: data)
+                    onSuccess(actualData)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
         }
     }
 }
