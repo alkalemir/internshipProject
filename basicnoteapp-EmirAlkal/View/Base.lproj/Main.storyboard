@@ -263,11 +263,12 @@
                         <outlet property="loginButton" destination="vBj-hH-gib" id="zVM-TB-BLR"/>
                         <outlet property="loginTopConstraint" destination="KAR-EM-8ju" id="hhH-yp-Bd4"/>
                         <outlet property="stackView" destination="nsd-83-Osg" id="bXl-Ce-phy"/>
+                        <segue destination="wdV-6o-dqr" kind="presentation" identifier="loginToNotes" animates="NO" modalPresentationStyle="fullScreen" id="Ye9-UU-6dN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Qn-RV-zPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2701" y="-477"/>
+            <point key="canvasLocation" x="2593" y="-764"/>
         </scene>
         <!--Forgot PasswordVC-->
         <scene sceneID="VI0-jO-WOK">
@@ -355,6 +356,79 @@
             </objects>
             <point key="canvasLocation" x="3715.9420289855075" y="97.767857142857139"/>
         </scene>
+        <!--NotesVC-->
+        <scene sceneID="TRR-0I-0We">
+            <objects>
+                <viewController id="wdV-6o-dqr" customClass="NotesVC" customModule="basicnoteapp_EmirAlkal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yHy-re-Xem">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_menu" translatesAutoresizingMaskIntoConstraints="NO" id="KCo-B6-kL3">
+                                <rect key="frame" x="20" y="52" width="24" height="24"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Svv-jm-Z9q">
+                                <rect key="frame" x="352" y="48" width="34" height="34"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sA4-wy-rrc">
+                                <rect key="frame" x="0.0" y="101" width="414" height="761"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <sections/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cl-XP-766">
+                                <rect key="frame" x="120" y="761" width="174" height="43"/>
+                                <color key="backgroundColor" red="0.54509803921568623" green="0.5490196078431373" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="0Gt-pw-64f"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="  Add Note">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addNotePressed:" destination="wdV-6o-dqr" eventType="touchUpInside" id="ozR-us-WRe"/>
+                                    <action selector="signUpButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIQ-s3-Xo6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zvY-3i-RcM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zvY-3i-RcM" firstAttribute="bottom" secondItem="sA4-wy-rrc" secondAttribute="bottom" id="21B-BW-Vw5"/>
+                            <constraint firstItem="sA4-wy-rrc" firstAttribute="top" secondItem="KCo-B6-kL3" secondAttribute="bottom" constant="25" id="2xe-gr-kvu"/>
+                            <constraint firstItem="KCo-B6-kL3" firstAttribute="top" secondItem="yHy-re-Xem" secondAttribute="top" constant="52" id="37O-A2-R0n"/>
+                            <constraint firstItem="zvY-3i-RcM" firstAttribute="trailing" secondItem="Svv-jm-Z9q" secondAttribute="trailing" constant="28" id="6Cj-4C-GBm"/>
+                            <constraint firstItem="3Cl-XP-766" firstAttribute="leading" secondItem="zvY-3i-RcM" secondAttribute="leading" constant="120" id="857-sj-dte"/>
+                            <constraint firstItem="Svv-jm-Z9q" firstAttribute="top" secondItem="yHy-re-Xem" secondAttribute="top" constant="48" id="KX1-R8-MEe"/>
+                            <constraint firstItem="zvY-3i-RcM" firstAttribute="trailing" secondItem="3Cl-XP-766" secondAttribute="trailing" constant="120" id="SjI-Bo-PBZ"/>
+                            <constraint firstItem="KCo-B6-kL3" firstAttribute="leading" secondItem="zvY-3i-RcM" secondAttribute="leading" constant="20" id="T1y-XB-XBf"/>
+                            <constraint firstItem="zvY-3i-RcM" firstAttribute="trailing" secondItem="sA4-wy-rrc" secondAttribute="trailing" id="UX9-ed-YSP"/>
+                            <constraint firstItem="sA4-wy-rrc" firstAttribute="leading" secondItem="zvY-3i-RcM" secondAttribute="leading" id="erz-q4-EGU"/>
+                            <constraint firstItem="zvY-3i-RcM" firstAttribute="bottom" secondItem="3Cl-XP-766" secondAttribute="bottom" constant="58" id="fGV-eU-DDj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addNoteButton" destination="3Cl-XP-766" id="ofq-zH-E42"/>
+                        <outlet property="tableView" destination="sA4-wy-rrc" id="AfZ-Uq-QUS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSw-OJ-LYb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4515.9420289855079" y="-551.11607142857144"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZNl-IR-LPZ">
             <objects>
@@ -376,7 +450,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Cda-8Z-tca">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tnb-88-dwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lIf-Al-8Ng" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="afd-96-4oc">
@@ -388,6 +461,7 @@
                         <segue destination="hbB-ku-Iih" kind="relationship" relationship="rootViewController" id="tKA-o8-dag"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnb-88-dwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1959" y="652"/>
         </scene>
@@ -396,6 +470,8 @@
         <segue reference="tcc-tB-buM"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="ic_menu" width="24" height="24"/>
+        <image name="profile" width="34" height="34"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

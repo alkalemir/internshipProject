@@ -7,6 +7,8 @@
 
 import Foundation
 
+var currentToken = ""
+
 struct TokenResponse: Codable {
     let data: Token
 }

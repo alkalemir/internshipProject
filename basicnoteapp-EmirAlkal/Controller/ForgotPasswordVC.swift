@@ -14,7 +14,7 @@ class ForgotPasswordVC: UIViewController {
     // swiftlint: enable all
     
     var emailTextField = TextField(title: "Email Address", errorMessage: "Invalid Mail", closure: Validate.emailTextField)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureStackView()
