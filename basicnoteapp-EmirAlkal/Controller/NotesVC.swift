@@ -9,6 +9,8 @@ import UIKit
 
 class NotesVC: UIViewController {
 
+    // MARK: - Properties
+    
     @IBOutlet weak private var addNoteButton: UIButton!
     @IBOutlet weak private var tableView: UITableView!
     
@@ -18,6 +20,7 @@ class NotesVC: UIViewController {
         }
     }
     
+    // MARK: - Functions 
     override func viewDidLoad() {
         super.viewDidLoad()
         addNoteButton.setImage(.init(named: "plus_icon"), for: .normal)
@@ -27,6 +30,7 @@ class NotesVC: UIViewController {
             self.notes = notes.data.data
         }
     }
+    
     @IBAction private func addNotePressed(_ sender: UIButton) {
         let alertController = UIAlertController(title: "Input", message: "Test", preferredStyle: .alert)
         
@@ -55,6 +59,7 @@ extension NotesVC {
 }
 
 // MARK: - TableView
+
 extension NotesVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notes.count
