@@ -68,10 +68,22 @@ extension NotesVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .normal, title: nil) { [weak self] (_, _, _) in
+        let deleteAction = UIContextualAction(style: .normal, title: nil) { (_, _, _) in
+            let alertController = UIAlertController(title: "Delete Note",
+                                                    message: "Are you sure you want to delete this note?", preferredStyle: .alert)
             
+            alertController.addAction(UIAlertAction(title: "Cancel", style: .default))
+            alertController.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { _ in
+                NetworkManager(url: URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/notes/")!)
+                    .deleteNote(id: self.notes[indexPath.row].id) {
+                        self.notes.remove(at: indexPath.row)
+                    }
+            }))
+            
+            self.present(alertController, animated: true)
         }
-        let editAction = UIContextualAction(style: .normal, title: nil) { [weak self] (_, _, _) in
+        
+        let editAction = UIContextualAction(style: .normal, title: nil) { (_, _, _) in
             
         }
         deleteAction.backgroundColor = UIColor(named: "red")
