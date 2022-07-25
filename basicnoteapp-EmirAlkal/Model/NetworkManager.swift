@@ -133,9 +133,13 @@ struct NetworkManager {
     
     func deleteNote(id: Int, completion: @escaping () -> Void) {
         let headers: HTTPHeaders = [.authorization(bearerToken: currentToken)]
-        print("\(url)\(id)")
+
         AF.request("\(url)\(id)", method: .delete, headers: headers).response { response in
-            completion()
+            if let statusCode = response.response?.statusCode {
+                if statusCode == 200 {
+                    completion()
+                }
+            }
         }
     }
 }
