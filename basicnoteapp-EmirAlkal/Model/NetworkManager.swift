@@ -105,11 +105,33 @@ struct NetworkManager {
         }
     }
     
-    func addNote(note: Note, completion: @escaping () -> Void) {
+    func addNote(note: Note, completion: @escaping (String) -> Void) {
         let headers: HTTPHeaders = [.authorization(bearerToken: currentToken)]
         
-        AF.request(url, method: .post, parameters: note, encoder: JSONParameterEncoder.default, headers: headers).response { _ in
-            completion()
+        AF.request(url, method: .post, parameters: note, encoder: JSONParameterEncoder.default, headers: headers).response { response in
+            if let statusCode = response.response?.statusCode {
+                if statusCode == 400 {
+                    do {
+                        let actualData = try JSONDecoder().decode(ErrorMessage.self, from: response.data!)
+                        completion(actualData.message)
+                        return
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            if let data = response.data {
+                do {
+                    let actualData = try JSONDecoder().decode(ForgotResponse.self, from: data)
+                    completion(actualData.message)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
         }
+    }
+    
+    func deleteNode(id: Int) {
+        
     }
 }

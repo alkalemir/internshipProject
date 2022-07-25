@@ -20,7 +20,7 @@ class NotesVC: UIViewController {
         }
     }
     
-    // MARK: - Functions 
+    // MARK: - Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         addNoteButton.setImage(.init(named: "plus_icon"), for: .normal)
@@ -32,19 +32,12 @@ class NotesVC: UIViewController {
     }
     
     @IBAction private func addNotePressed(_ sender: UIButton) {
-        let alertController = UIAlertController(title: "Input", message: "Test", preferredStyle: .alert)
-        
-        alertController.addTextField()
-        alertController.addTextField()
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: { _ in
-            let note = Note(title: alertController.textFields![0].text!, note: alertController.textFields![1].text!)
-            
-            NetworkManager(url: URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/notes")!).addNote(note: note) {
-                self.notes.append(note)
-            }
-        }))
-        self.present(alertController, animated: true)
+        // ToDo
+//        NetworkManager(url: URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/notes")!).addNote(note: note) { message in
+//            print(message)
+//            self.notes.append(note)
     }
+ 
 }
 
 // MARK: - Configurations
@@ -72,5 +65,24 @@ extension NotesVC: UITableViewDataSource, UITableViewDelegate {
         cell?.title.text = notes[indexPath.row].title
         
         return cell ?? TableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .normal, title: nil) { [weak self] (_, _, _) in
+            
+        }
+        let editAction = UIContextualAction(style: .normal, title: nil) { [weak self] (_, _, _) in
+            
+        }
+        deleteAction.backgroundColor = UIColor(named: "red")
+        editAction.backgroundColor = UIColor(named: "editNote")
+        
+        deleteAction.image = .init(named: "delete")
+        editAction.image = .init(named: "edit")
+        
+        let actions = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
+        actions.performsFirstActionWithFullSwipe = false
+        
+        return actions
     }
 }

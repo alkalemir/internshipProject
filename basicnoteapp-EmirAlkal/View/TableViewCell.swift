@@ -37,7 +37,7 @@ class TableViewCell: UITableViewCell {
         
         NSLayoutConstraint.activate([
             content.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
-            content.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 12),
+            content.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 8),
             content.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
             content.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24)
         ])
