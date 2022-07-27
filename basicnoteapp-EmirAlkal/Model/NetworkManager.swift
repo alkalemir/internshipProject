@@ -38,7 +38,7 @@ struct NetworkManager {
         }
     }
     
-    func loginRequest(with loginInfo: Login, completion: @escaping (String) -> Void, onSuccess: @escaping () -> Void) {
+    func loginRequest(with loginInfo: Login, completion: @escaping (String) -> Void, onSuccess: @escaping (Token) -> Void) {
         AF.request(url, method: .post, parameters: loginInfo, encoder: JSONParameterEncoder.default).response { response in
             if let statusCode = response.response?.statusCode {
                 if statusCode == 400 {
@@ -56,7 +56,7 @@ struct NetworkManager {
                 do {
                     let actualData = try JSONDecoder().decode(TokenResponse.self, from: data)
                     KeychainWrapper.standard.set(actualData.data.access_token, forKey: "token")
-                    onSuccess()
+                    onSuccess(actualData.data)
                 } catch {
                     print(error.localizedDescription)
                 }
@@ -84,6 +84,60 @@ struct NetworkManager {
                     onSuccess(actualData)
                 } catch {
                     print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    func getNotes(completion: @escaping (GetNotes) -> Void) {
+        let headers: HTTPHeaders = [.authorization(bearerToken: currentToken)]
+    
+        AF.request(url, method: .get, headers: headers).response { response in
+            
+            if let data = response.data {
+                do {
+                    let actualData = try JSONDecoder().decode(GetNotes.self, from: data)
+                    completion(actualData)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    func addNote(note: Note, completion: @escaping (String) -> Void) {
+        let headers: HTTPHeaders = [.authorization(bearerToken: currentToken)]
+        
+        AF.request(url, method: .post, parameters: note, encoder: JSONParameterEncoder.default, headers: headers).response { response in
+            if let statusCode = response.response?.statusCode {
+                if statusCode == 400 {
+                    do {
+                        let actualData = try JSONDecoder().decode(ErrorMessage.self, from: response.data!)
+                        completion(actualData.message)
+                        return
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            if let data = response.data {
+                do {
+                    let actualData = try JSONDecoder().decode(ForgotResponse.self, from: data)
+                    completion(actualData.message)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    func deleteNote(id: Int, completion: @escaping () -> Void) {
+        let headers: HTTPHeaders = [.authorization(bearerToken: currentToken)]
+
+        AF.request("\(url)\(id)", method: .delete, headers: headers).response { response in
+            if let statusCode = response.response?.statusCode {
+                if statusCode == 200 {
+                    completion()
                 }
             }
         }

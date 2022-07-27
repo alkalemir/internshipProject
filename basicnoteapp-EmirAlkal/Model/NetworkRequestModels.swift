@@ -14,6 +14,7 @@ struct Register: Encodable {
         case email = "email"
         case password = "password"
     }
+    
     let fullName: String
     let email: String
     let password: String

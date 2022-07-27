@@ -53,8 +53,9 @@ class LoginVC: UIViewController {
             let alertController = UIAlertController(title: "Error", message: str, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
             self.present(alertController, animated: true)
-        } onSuccess: {
-            
+        } onSuccess: { token in
+            currentToken = token.access_token
+            self.performSegue(withIdentifier: "loginToNotes", sender: nil)
         }
     }
 }

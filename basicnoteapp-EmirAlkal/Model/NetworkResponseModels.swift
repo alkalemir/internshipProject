@@ -10,3 +10,18 @@ import Foundation
 struct ForgotResponse: Codable {
     let message: String
 }
+
+struct GetNotes: Codable {
+    let data: Notes
+}
+
+struct Notes: Codable {
+    let data: [Note]
+    let current_page: Int
+}
+
+struct Note: Codable {
+    let id: Int
+    let title: String
+    let note: String
+}
