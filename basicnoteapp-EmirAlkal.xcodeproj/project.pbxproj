@@ -34,6 +34,7 @@
 		A359475B2888054A00B0C4CD /* NetworkRequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359475A2888054900B0C4CD /* NetworkRequestModels.swift */; };
 		A3C2CC9D2874CF5C002CA074 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */; };
 		A3D055392879781400E4BF7E /* TextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D055382879781400E4BF7E /* TextField+Ext.swift */; };
+		A3E5ECC12891577C004187BB /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E5ECC02891577C004187BB /* AddNote.swift */; };
 		A3F7AFE1288AC81700320B70 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7AFE0288AC81700320B70 /* NotesVC.swift */; };
 		A3F7AFE8288B227A00320B70 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7AFE6288B227A00320B70 /* TableViewCell.swift */; };
 		A3F7AFE9288B227A00320B70 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F7AFE7288B227A00320B70 /* TableViewCell.xib */; };
@@ -97,6 +98,7 @@
 		A359475A2888054900B0C4CD /* NetworkRequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestModels.swift; sourceTree = "<group>"; };
 		A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		A3D055382879781400E4BF7E /* TextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Ext.swift"; sourceTree = "<group>"; };
+		A3E5ECC02891577C004187BB /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 		A3F7AFE0288AC81700320B70 /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
 		A3F7AFE6288B227A00320B70 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A3F7AFE7288B227A00320B70 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				A35947562887FB4E00B0C4CD /* LoginVC.swift */,
 				A3389769288953130058CE15 /* ForgotPasswordVC.swift */,
 				A3F7AFE0288AC81700320B70 /* NotesVC.swift */,
+				A3E5ECC02891577C004187BB /* AddNote.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				A35947572887FB4E00B0C4CD /* LoginVC.swift in Sources */,
 				A3C2CC9D2874CF5C002CA074 /* UITextField+Ext.swift in Sources */,
 				A359475B2888054A00B0C4CD /* NetworkRequestModels.swift in Sources */,
+				A3E5ECC12891577C004187BB /* AddNote.swift in Sources */,
 				A33F21632870875700CE9457 /* TokenResponseModel.swift in Sources */,
 				A3F7AFE8288B227A00320B70 /* TableViewCell.swift in Sources */,
 				048F8FAA2869C7C70087B7D4 /* SceneDelegate.swift in Sources */,
