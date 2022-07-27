@@ -430,10 +430,10 @@
             </objects>
             <point key="canvasLocation" x="5426.0869565217399" y="-551.11607142857144"/>
         </scene>
-        <!--Add Note-->
+        <!--Add NoteVC-->
         <scene sceneID="MYc-Ob-rgf">
             <objects>
-                <viewController id="tlH-iT-MMU" customClass="AddNote" customModule="basicnoteapp_EmirAlkal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tlH-iT-MMU" customClass="AddNoteVC" customModule="basicnoteapp_EmirAlkal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AO3-VE-fNK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -506,7 +506,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DL5-lg-FVf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6305.7971014492759" y="-551.11607142857144"/>
+            <point key="canvasLocation" x="6320" y="-551"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZNl-IR-LPZ">

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddNote: UIViewController {
+class AddNoteVC: UIViewController {
 
     @IBOutlet weak private var noteTitle: UITextField!
     @IBOutlet weak private var noteContent: UITextView!
@@ -30,7 +30,8 @@ class AddNote: UIViewController {
 }
 
 // MARK: - Configurations
-extension AddNote {
+
+extension AddNoteVC {
     func configureNavBarBackButton() {
         navigationController?.navigationBar.backIndicatorImage = .init(named: "Path")
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = .init(named: "Path")

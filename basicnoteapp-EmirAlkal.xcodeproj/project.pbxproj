@@ -34,7 +34,8 @@
 		A359475B2888054A00B0C4CD /* NetworkRequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359475A2888054900B0C4CD /* NetworkRequestModels.swift */; };
 		A3C2CC9D2874CF5C002CA074 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */; };
 		A3D055392879781400E4BF7E /* TextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D055382879781400E4BF7E /* TextField+Ext.swift */; };
-		A3E5ECC12891577C004187BB /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E5ECC02891577C004187BB /* AddNote.swift */; };
+		A3E5ECC12891577C004187BB /* AddNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E5ECC02891577C004187BB /* AddNoteVC.swift */; };
+		A3E5ECC328916AF6004187BB /* EditNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E5ECC228916AF6004187BB /* EditNoteVC.swift */; };
 		A3F7AFE1288AC81700320B70 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7AFE0288AC81700320B70 /* NotesVC.swift */; };
 		A3F7AFE8288B227A00320B70 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7AFE6288B227A00320B70 /* TableViewCell.swift */; };
 		A3F7AFE9288B227A00320B70 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F7AFE7288B227A00320B70 /* TableViewCell.xib */; };
@@ -98,7 +99,8 @@
 		A359475A2888054900B0C4CD /* NetworkRequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestModels.swift; sourceTree = "<group>"; };
 		A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		A3D055382879781400E4BF7E /* TextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Ext.swift"; sourceTree = "<group>"; };
-		A3E5ECC02891577C004187BB /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
+		A3E5ECC02891577C004187BB /* AddNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteVC.swift; sourceTree = "<group>"; };
+		A3E5ECC228916AF6004187BB /* EditNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteVC.swift; sourceTree = "<group>"; };
 		A3F7AFE0288AC81700320B70 /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
 		A3F7AFE6288B227A00320B70 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A3F7AFE7288B227A00320B70 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -237,9 +239,9 @@
 			isa = PBXGroup;
 			children = (
 				A32457DE2870725700A929E6 /* RegisterVC+Ext.swift */,
+				A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */,
 				A35947582887FDAC00B0C4CD /* LoginVC+Ext.swift */,
 				A338976B2889555B0058CE15 /* ForgotPasswordVC+Ext.swift */,
-				A3C2CC9C2874CF5C002CA074 /* UITextField+Ext.swift */,
 				A3D055382879781400E4BF7E /* TextField+Ext.swift */,
 				A3233E0428797E8100DBCE71 /* UILabel+Ext.swift */,
 			);
@@ -253,7 +255,8 @@
 				A35947562887FB4E00B0C4CD /* LoginVC.swift */,
 				A3389769288953130058CE15 /* ForgotPasswordVC.swift */,
 				A3F7AFE0288AC81700320B70 /* NotesVC.swift */,
-				A3E5ECC02891577C004187BB /* AddNote.swift */,
+				A3E5ECC02891577C004187BB /* AddNoteVC.swift */,
+				A3E5ECC228916AF6004187BB /* EditNoteVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				A3233E0728797F0100DBCE71 /* Validations.swift in Sources */,
 				A3233E0528797E8100DBCE71 /* UILabel+Ext.swift in Sources */,
 				A338976C2889555B0058CE15 /* ForgotPasswordVC+Ext.swift in Sources */,
+				A3E5ECC328916AF6004187BB /* EditNoteVC.swift in Sources */,
 				A330F7602870E33E00A52B8F /* KeychainWrapper.swift in Sources */,
 				A338976A288953130058CE15 /* ForgotPasswordVC.swift in Sources */,
 				A35947592887FDAC00B0C4CD /* LoginVC+Ext.swift in Sources */,
@@ -553,7 +557,7 @@
 				A35947572887FB4E00B0C4CD /* LoginVC.swift in Sources */,
 				A3C2CC9D2874CF5C002CA074 /* UITextField+Ext.swift in Sources */,
 				A359475B2888054A00B0C4CD /* NetworkRequestModels.swift in Sources */,
-				A3E5ECC12891577C004187BB /* AddNote.swift in Sources */,
+				A3E5ECC12891577C004187BB /* AddNoteVC.swift in Sources */,
 				A33F21632870875700CE9457 /* TokenResponseModel.swift in Sources */,
 				A3F7AFE8288B227A00320B70 /* TableViewCell.swift in Sources */,
 				048F8FAA2869C7C70087B7D4 /* SceneDelegate.swift in Sources */,

@@ -79,12 +79,11 @@ extension NotesVC: UITableViewDataSource, UITableViewDelegate {
                         self.notes.remove(at: indexPath.row)
                     }
             }))
-            
             self.present(alertController, animated: true)
         }
         
         let editAction = UIContextualAction(style: .normal, title: nil) { (_, _, _) in
-            
+            self.navigationController?.pushViewController(EditNoteVC(note: self.notes[indexPath.row]), animated: true)
         }
         deleteAction.backgroundColor = UIColor(named: "red")
         editAction.backgroundColor = UIColor(named: "editNote")
