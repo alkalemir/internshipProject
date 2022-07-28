@@ -31,13 +31,13 @@ class NotesVC: UIViewController {
         }
     }
     
-    @IBAction private func addNotePressed(_ sender: UIButton) {
-        // ToDo
-//        NetworkManager(url: URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/notes")!).addNote(note: note) { message in
-//            print(message)
-//            self.notes.append(note)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NetworkManager(url: URL(string: "https://basicnoteapp-emiralkal.herokuapp.com/api/users/me/notes?page=1")!).getNotes { notes in
+            self.notes = notes.data.data
+        }
     }
- 
 }
 
 // MARK: - Configurations
@@ -79,12 +79,11 @@ extension NotesVC: UITableViewDataSource, UITableViewDelegate {
                         self.notes.remove(at: indexPath.row)
                     }
             }))
-            
             self.present(alertController, animated: true)
         }
         
         let editAction = UIContextualAction(style: .normal, title: nil) { (_, _, _) in
-            
+            self.navigationController?.pushViewController(EditNoteVC(note: self.notes[indexPath.row]), animated: true)
         }
         deleteAction.backgroundColor = UIColor(named: "red")
         editAction.backgroundColor = UIColor(named: "editNote")

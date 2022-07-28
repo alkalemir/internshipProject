@@ -142,4 +142,16 @@ struct NetworkManager {
             }
         }
     }
+    
+    func editNote(id: Int, note: Note, completion: @escaping () -> Void) {
+        let headers: HTTPHeaders = [.authorization(bearerToken: currentToken)]
+        
+        AF.request("\(url)\(id)", method: .put, parameters: note, encoder: JSONParameterEncoder.default, headers: headers).response { response in
+            if let statusCode = response.response?.statusCode {
+                if statusCode == 200 {
+                    completion()
+                }
+            }
+        }
+    }
 }

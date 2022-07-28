@@ -22,6 +22,6 @@ struct Notes: Codable {
 
 struct Note: Codable {
     let id: Int
-    let title: String
-    let note: String
+    var title: String
+    var note: String
 }
